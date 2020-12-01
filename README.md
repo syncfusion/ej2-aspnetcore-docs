@@ -1,4 +1,4 @@
-# Syncfusion Angular Documentation
+# Syncfusion ASP .NET CORE Documentation
 
 This is the GitHub repository for the technical product documentation for [Syncfusion ASP .NET CORE Components](https://ej2.syncfusion.com/home/aspnetcore.html).This documentation is published to https://ej2.syncfusion.com/aspnetcore/documentation/
 
