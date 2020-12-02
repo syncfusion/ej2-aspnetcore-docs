@@ -51,7 +51,7 @@ gulp.task('ship-to-gitlap', function (done) {
             return;
         } else {
             console.log('Clone has been completed...!');
-            shelljs.cp('-rf', `./src/${cloneRepos[j]}/*`, `./gitlapRepo/ej2-${cloneRepos[j]}-asp-docs/src`);
+            shelljs.cp('-rf', `./src/${cloneRepos[j]}/*`, `./gitlapRepo/ej2-${cloneRepos[j]}-asp-docs/src/${cloneRepos[j]}/aspcore`);
             shelljs.cd(`./gitlapRepo/ej2-${cloneRepos[j]}-asp-docs`);
             shelljs.exec('git add .');
             shelljs.exec('git pull');
