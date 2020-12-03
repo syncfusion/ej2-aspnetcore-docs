@@ -10,3 +10,4 @@ cireports/
 e2e-reports.txt
 controlsList.txt
 gitbook-plugin-syncfusion-ej2/book/ej2-data.js
+yarn.lock
