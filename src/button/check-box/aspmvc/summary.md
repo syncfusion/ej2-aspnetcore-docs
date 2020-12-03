@@ -1,7 +1,0 @@
-* [Getting Started](check-box/getting-started.md)
-* [Label and Size](check-box/label-and-size.md)
-* [Accessibility](check-box/accessibility.md)
-* [Customized CheckBox](check-box/how-to/customized-checkbox.md)
-* [Name and Value in form submit](check-box/how-to/name-and-value-in-form-submit.md)
-* [Right-To-Left](check-box/how-to/right-to-left.md)
-* [Migration from Essential JS 1](check-box/ej1-api-migration.md)

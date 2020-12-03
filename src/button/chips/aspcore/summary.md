@@ -1,5 +1,0 @@
-* [Getting Started](chips/getting-started.md)
-* [Types](chips/types.md)
-* [Chip Customization](chips/customization.md)
-* [CSS Structure](chips/style.md)
-* [Accessibility](chips/accessibility.md)
