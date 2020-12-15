@@ -13,7 +13,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -95,7 +95,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -124,7 +124,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -285,7 +285,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -2001,7 +2001,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>[Model]</b>
 <code>
 
-    Tooltip tooltip = new Tooltip() { TemplateId = "mouseovertooltip"};
+    Tooltip tooltip = new Tooltip() { TemplateId = "mouseOverTooltip"};
     ViewBag.tooltip = tooltip;
 
 </code>
@@ -2113,7 +2113,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -2292,7 +2292,7 @@ This article describes the API migration process of Diagram component from Essen
 <code>
 
     List<ContextMenuItem> items = new List<ContextMenuItem>();
-    items.Add(new ContextMenuItem() { ImageUrl = "Images/zoomin.Png" });
+    items.Add(new ContextMenuItem() { ImageUrl = "Images/zoomIn.Png" });
     DiagramContextMenu contextMenu = new DiagramContextMenu()
     {
         Items = items
@@ -2315,7 +2315,7 @@ This article describes the API migration process of Diagram component from Essen
 <code>
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
-    menuItems.Add(new ContextMenuItem() { Url = "Images/zoomin.Png" });
+    menuItems.Add(new ContextMenuItem() { Url = "Images/zoomIn.Png" });
     DiagramContextMenuSettings contextMenuSettings = new DiagramContextMenuSettings()
     {
         Items = "menuItems"
@@ -2544,7 +2544,7 @@ This article describes the API migration process of Diagram component from Essen
 
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -2829,10 +2829,10 @@ This article describes the API migration process of Diagram component from Essen
 
 <code>
 
-    List<string> customFeilds = new List<string>();
-    customFeilds.Add("Description");
-    customFeilds.Add("Color");
-    ViewBag.customFeilds = customFeilds;
+    List<string> customFields = new List<string>();
+    customFields.Add("Description");
+    customFields.Add("Color");
+    ViewBag.customFields = customFields;
 
 </code>
 </td>
@@ -3332,13 +3332,13 @@ This article describes the API migration process of Diagram component from Essen
 
 <code>
 
-    List<string> customFeilds = new List<string>();
-    customFeilds.Add("Description");
-    customFeilds.Add("Color");
+    List<string> customFields = new List<string>();
+    customFields.Add("Description");
+    customFields.Add("Color");
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
-        CustomFields = customFeilds
+        CustomFields = customFields
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
@@ -3354,7 +3354,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3472,7 +3472,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3540,7 +3540,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3578,7 +3578,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3614,7 +3614,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3662,7 +3662,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3701,59 +3701,12 @@ This article describes the API migration process of Diagram component from Essen
 </tr>
 </table>
 
-## GetDescription
-
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td><b>Behaviour</b></td>
-<td><b>API in Essential JS 1</b></td>
-<td><b>API in Essential JS 2</b></td>
-</tr>
-
-<tr>
-<td><b>Allows to get the custom description<b></td>
-<td><b>Not applicable</b>
-</td>
-<td>
-<b>Property</b>:<i>`GetDescription`</i>
-<br>
-<br>
-<code>
-
-    <ejs-diagram getDescription="@ViewBag.getAccessibility"></ejs-diagram>
-
-</code>
-<code>
-
-    function getAccessibility(object, diagram) {
-        var value;
-        if (object instanceof Connector) {
-            value = 'clicked on Connector';
-        } else {
-            value = undefined;
-        }
-        return value;
-    }
-
-</code>
-<b>[Model]</b>
-
-<code>
-
-    ViewBag.getAccessibility = "getAccessibility";
-
-</code></td>
-
-</tr>
-</table>
-
 ## GetCustomTool
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3806,7 +3759,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3841,7 +3794,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -3855,10 +3808,10 @@ This article describes the API migration process of Diagram component from Essen
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
-        var entry = { object: node, prevState: node.EmpInfo };
+        var entry = { object: node, prevState: node.employeeData };
         diagram.model.historyManager.push(entry);
         var value = { role: "New role" };
-        node.EmpInfo = value;
+        node.employeeData = value;
         if(diagram.model.historyManager.canPop(entry)){
             diagram.model.historyManager.pop();
         }
@@ -3941,10 +3894,10 @@ This article describes the API migration process of Diagram component from Essen
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
-        var entry = { object: node, prevState: node.EmpInfo };
+        var entry = { object: node, prevState: node.employeeData };
         diagram.model.historyManager.push(entry);
         var value = { role: "New role" };
-        node.EmpInfo = value;
+        node.employeeData = value;
     </script>
 
 </code>
@@ -3986,8 +3939,8 @@ This article describes the API migration process of Diagram component from Essen
     function customUndoRedo(args) {
         var diagram = $("#diagram").ejDiagram("instance");
         var node = args.object;
-        var currentState = node.EmpInfo;
-        node.EmpInfo = args.PrevState;
+        var currentState = node.employeeData;
+        node.employeeData = args.PrevState;
         args.PrevState = currentState;
     }
 
@@ -4138,8 +4091,8 @@ This article describes the API migration process of Diagram component from Essen
         function customUndoRedo(args) {
             var diagram = $("#diagram").ejDiagram("instance");
             var node = args.Object;
-            var currentState = node.EmpInfo;
-            node.EmpInfo = args.PrevState;
+            var currentState = node.employeeData;
+            node.employeeData = args.PrevState;
             args.PrevState = currentState;
         }
     </script>
@@ -4216,7 +4169,7 @@ This article describes the API migration process of Diagram component from Essen
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
-        diagram.historyList.CcrrentEntry();
+        diagram.historyList.currentEntry();
     </script>
 
 </code></td>
@@ -4297,7 +4250,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -4759,7 +4712,7 @@ This article describes the API migration process of Diagram component from Essen
 <tr>
 <td><b>Defines how long edges should be, ideally. This will be the resting length for the springs</b></td>
 <td>
-<b>Property</b>:<i>`Layout.MaxIteraction`</i>
+<b>Property</b>:<i>`Layout.MaxIteration`</i>
 <br>
 <br>
 <code>
@@ -4887,7 +4840,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -8678,7 +8631,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -8773,7 +8726,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
  <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -8836,7 +8789,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -9592,7 +9545,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -9678,7 +9631,7 @@ This article describes the API migration process of Diagram component from Essen
 <tr>
 <td><b>Defines the scrollable area of diagram. Applicable, if the scroll limit is “limited”</b></td>
 <td>
-<b>Property</b>:<i>`PageSettings.SrollableArea`</i>
+<b>Property</b>:<i>`PageSettings.scrollableArea`</i>
 <br>
 <br>
 <code>
@@ -9756,7 +9709,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -9886,7 +9839,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -10113,7 +10066,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -10144,8 +10097,8 @@ This article describes the API migration process of Diagram component from Essen
 
     function created() {
         diagram = document.getElementById("diagram").ej2_instances[0];
-        var zoomin = { type: 'ZoomIn', zoomFactor: 0.5 };
-        diagram.ZoomTo(zoomin);
+        var zoomIn = { type: 'ZoomIn', zoomFactor: 0.5 };
+        diagram.ZoomTo(zoomIn);
     }
 
 </code>
@@ -10166,7 +10119,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -10201,7 +10154,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -10236,7 +10189,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -10362,7 +10315,7 @@ This article describes the API migration process of Diagram component from Essen
     visible : "true",
     backgroundColor : "#4D4D4D",
     offset : ej.Datavisualization.Diagram.Point(0, 0),
-    position :" middleleft"
+    position :" middleLeft"
     margin : { left: 5 },
     pathColor : "white",
     horizontalAlignment : ej.Datavisualization.Diagram.HorizontalAlignment.Right,
@@ -10415,7 +10368,7 @@ This article describes the API migration process of Diagram component from Essen
             this.ClonedNodes = [];
             this.Cursor = "pointer";
         }
-        CloneTool.Prototype.Mouseup = function(evt) {
+        CloneTool.Prototype.Mouseup = function(event) {
             this.Diagram.Copy();
             this.Diagram.Paste();
         }
@@ -10498,7 +10451,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>
@@ -10536,7 +10489,7 @@ This article describes the API migration process of Diagram component from Essen
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Behaviour</b></td>
+<td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
 <td><b>API in Essential JS 2</b></td>
 </tr>

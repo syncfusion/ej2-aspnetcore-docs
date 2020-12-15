@@ -32,7 +32,7 @@ The height and width of swimlane header can be customized with [`weight`](https:
 
 >Note: By default the swimlane orientation has Horizontal.
 
-The following code example illustrates how to customise the swimlane header..
+The following code example illustrates how to customize the swimlane header..
 
 {% aspTab template="diagram/swimlane/headercustomize", sourceFiles="headercustomize.cs" %}
 

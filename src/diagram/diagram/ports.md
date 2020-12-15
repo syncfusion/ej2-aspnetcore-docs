@@ -148,5 +148,5 @@ The offset property of port is used to align the port based on fractions. 0 repr
 
 ## Constraints
 
-The constraints property allows to enable/disable certain behaviours of ports. For more information about port
+The constraints property allows to enable/disable certain behaviors of ports. For more information about port
 constraints, refer to [`Port Constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.PortConstraints.html).

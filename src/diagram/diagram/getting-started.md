@@ -68,7 +68,7 @@ Create and add a `node` (JSON data) with specific position, size, label, and sha
 
 ## Connect two Nodes with a Connector
 
-Add two node to the diagram as shown in the previous example. Connect these nodes by adding a connector using the `connector` property and refer the source and target end by using the `sourceNode` and `tagetNode` properties.
+Add two node to the diagram as shown in the previous example. Connect these nodes by adding a connector using the `connector` property and refer the source and target end by using the `sourceNode` and `targetNode` properties.
 {% aspTab template="diagram/getting-started/connector", sourceFiles="connector.cs" %}
 
 {% endaspTab %}

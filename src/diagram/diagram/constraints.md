@@ -6,13 +6,13 @@ description: "Diagram constraints allow you to enable/disable certain behaviors 
 
 # Constraints
 
-Constraints are used to enable/disable certain behaviours of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviours can be enabled/disabled using Bitwise operators (&, |, ~, <<, etc.).
+Constraints are used to enable/disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled using Bitwise operators (&, |, ~, <<, etc.).
 
 To know more about Bitwise operators, refer to [`Bitwise Operations`](#bitwise-operations).
 
 ## Diagram constraints
 
-Diagram constraints allow to enable or disable the following behaviours:
+Diagram constraints allow to enable or disable the following behaviors:
 
 * Page editing
 * Bridging
@@ -30,7 +30,7 @@ For more information about diagram constraints, refer to [`DiagramConstraints`](
 
 ## Node constraints
 
-Node constraints allows to enable or disable the following behaviours of node. They are as follows:
+Node constraints allows to enable or disable the following behaviors of node. They are as follows:
 
 * Selection
 * Deletion
@@ -51,7 +51,7 @@ For more information about node constraints, refer to [`NodeConstraints`](https:
 
 ## Connector constraints
 
-Connector constraints allow to enable or disable certain behaviours of connectors.
+Connector constraints allow to enable or disable certain behaviors of connectors.
 
 * Selection
 * Deletion
@@ -70,7 +70,7 @@ For more information about connector constraints, refer to [`ConnectorConstraint
 
 ## Port constraints
 
-You can enable or disable certain behaviours of port. They are as follows:
+You can enable or disable certain behaviors of port. They are as follows:
 
 * Connect
 * ConnectOnDrag
@@ -113,7 +113,7 @@ For more information about selector constraints, refer to [`SelectorConstraints`
 
 ## Snap constraints
 
-Snap constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviours.
+Snap constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
 
 * Show only horizontal or vertical gridlines.
 * Show both horizontal and vertical gridlines.
@@ -130,7 +130,7 @@ For more information about snap constraints, refer to [`SnapConstraints`](https:
 
 ## Boundary constraints
 
-Boundary constraints defines a boundary for the diagram inside which the interaction should be done. Boundary constraints allow to set the following behaviours.
+Boundary constraints defines a boundary for the diagram inside which the interaction should be done. Boundary constraints allow to set the following behaviors.
 
 * Infinite boundary
 * Diagram sized boundary
@@ -144,9 +144,9 @@ The following code illustrates how to limit the interaction done inside a diagra
 
 For more information about selector constraints, refer to [`BoundaryConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.BoundaryConstraints.html).
 
-## Inherit behaviours
+## Inherit behaviors
 
-Some of the behaviours can be defined through both the specific object (node/connector) and diagram. When the behaviours are contradictorily defined through both, the actual behavior is set through inherit options.
+Some of the behaviors can be defined through both the specific object (node/connector) and diagram. When the behaviors are contradictorily defined through both, the actual behavior is set through inherit options.
 
 The following code example illustrates how to inherit the line bridging behavior from the diagram model.
 
