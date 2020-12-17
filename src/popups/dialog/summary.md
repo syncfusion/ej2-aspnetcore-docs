@@ -1,6 +1,7 @@
 * [Getting Started](dialog/getting-started.md)
 * [Templates](dialog/template.md)
 * [Animation](dialog/animation.md)
+* [Resizing](dialog/resize.md)
 * [CSS Structure](dialog/style.md)
 * [Localization](dialog/localization.md)  
 * [Accessibility](dialog/accessibility.md)
