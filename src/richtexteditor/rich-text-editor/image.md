@@ -61,6 +61,17 @@ Once you select the image from the local machine, the URL for the image will be 
 
 ![Rich Text Editor Image delete](./images/image-del.png)
 
+The following sample explains, how to configure `removeUrl` to remove a saved image from the remote service location, when the following image remove actions are performed:
+
+* `delete` key action.
+* `backspace` key action.
+* Removing uploaded image file from the insert image dialog.
+* Deleting image using the quick toolbar `remove` option.
+
+{% aspTab template="rich-text-editor/remove-url", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
 ## Insert from Web
 
 If you want to insert an image from online source like Google, Ping, etc., you need to enable images tool on the editor’s toolbar. By default, the images tool is open an image dialog which allows you to insert an image from online source.
