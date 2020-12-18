@@ -10,9 +10,9 @@ Selection provides an option to highlight a row or a cell. It can be done throug
 
 The grid supports two types of selection that can be set by using the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property of **e-grid-selectionsettings** tag helper. They are:
 
-* **Single**: The **Single** value is set by default, and it only allows selection of a single row or a cell.
-* **Multiple**: Allows you to select multiple rows or cells.
-To perform the multi-selection, press and hold CTRL key and click the desired rows or cells. To select range of rows or cells, press and hold the SHIFT key and click the rows or cells.
+* **Single**: The **Single** value is set by default, and it only allows selection of a single row or a cell or a column.
+* **Multiple**: Allows you to select multiple rows or cells or columns.
+To perform the multi-selection, press and hold CTRL key and click the desired rows or cells or columns. To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
 
 {% aspTab template="grid/selection/selection", sourceFiles="selection.cs" %}
 
@@ -48,6 +48,16 @@ the [`cellSelectionMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 > Cell selection requires the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell** or **Both**, and
 [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) should be **Multiple**.
 
+## Column selection
+
+Column selection can be done through simple mouse down or arrow keys.
+
+You can enable column selection by setting the [`selectionSettings.allowColumnSelection`](./api-selectionSettings.html#allowColumnSelection-boolean) property as true.
+
+{% aspTab template="grid/selection/column-selection", sourceFiles="column-selection.cs" %}
+
+{% endaspTab %}
+
 ## Checkbox selection
 
 Checkbox selection provides an option to select multiple grid records with help of checkbox in each row.
@@ -78,7 +88,7 @@ and hold CTRL key and click the desired rows. To select range of rows, press and
 
 ## Toggle selection
 
-The Toggle selection allows to perform selection and unselection of the particular row or cell. To enable toggle selection, set [`enableToggle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_EnableToggle) property of **e-grid-selectionsettings** as true. If you click on the selected row or cell then it will be unselected and vice versa.
+The Toggle selection allows to perform selection and unselection of the particular row or cell or column. To enable toggle selection, set [`enableToggle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_EnableToggle) property of **e-grid-selectionsettings** as true. If you click on the selected row or cell or column then it will be unselected and vice versa.
 
 {% aspTab template="grid/selection/toggleselection", sourceFiles="toggleselection.cs" %}
 
