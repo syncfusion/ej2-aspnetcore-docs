@@ -38,37 +38,3 @@ You can scroll the grid content to the selected row position by using the [`rowS
 {% aspTab template="grid/scrolling/scroll-selected-row", sourceFiles="scroll-selected-row.cs" %}
 
 {% endaspTab %}
-
-## Frozen rows and columns
-
-Frozen rows and columns provides an option to make rows and columns always visible in the top and left side of the grid while scrolling.
-
-In this demo, the [`frozenColumns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenColumns) is set as '2' and the [`frozenRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenRows)
-is set as '3'. Hence, the left two columns and top three rows are frozen.
-
-{% aspTab template="grid/scrolling/freeze-row-column", sourceFiles="freeze-row-column.cs" %}
-
-{% endaspTab %}
-
-### Freeze particular columns
-
-To freeze particular column in the grid, the [`isFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsFrozen) property of **e-grid-column** tag helper can be used.
-
-In this demo, the columns with field name **OrderID** and **EmployeeID** is frozen using
-the [`isFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsFrozen) property of **e-grid-column**.
-
-{% aspTab template="grid/scrolling/freeze-column", sourceFiles="freeze-column.cs" %}
-
-{% endaspTab %}
-
-> Frozen rows and columns should not be set outside the grid view port.
-> Frozen Grid will support row and column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
-
-### Limitations
-
-The following features are not supported in frozen rows and columns:
-
-* Grouping
-* Row Template
-* Detail Template
-* Hierarchy Grid
