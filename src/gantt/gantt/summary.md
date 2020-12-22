@@ -1,4 +1,5 @@
 * [Getting Started](gantt/getting-started.md)
+* [Feature Modules](gantt/module.md)
 * [Data Binding](gantt/data-binding.md)
 * [Selection](gantt/selection.md)
 * [Filtering](gantt/filtering.md)
@@ -36,3 +37,4 @@
 * [Styling and Appearance](gantt/how-to/styling-and-appearance.md)
 * [Maintain ZoomToFit](gantt/how-to/maintain-zoom-to-fit.md)
 * [Drag and drop from another component](gantt/how-to/drag-and-drop.md)
+* [Add new row position while adding](gantt/how-to/new-row-position.md)

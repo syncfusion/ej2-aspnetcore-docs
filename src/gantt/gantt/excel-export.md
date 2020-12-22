@@ -6,7 +6,7 @@ description: "Learn how to export Gantt data to Excel and CSV documents in the E
 
 # Excel Export
 
-Gantt supports client-side exporting, which allows you to export its data to the Excel and CSV formats. Use the `excelExport` and `csvExport` methods for exporting. To enable Excel export in the Gantt, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowExcelExport) to true.
+Gantt supports client-side exporting, which allows you to export its data to the Excel and CSV formats. Use the `excelExport` and `csvExport` methods for exporting. To enable Excel export in the Gantt, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowExcelExport.html) to true.
 
 {% aspTab template="gantt/excel-export/excelExport", sourceFiles="excelExport.cs" %}
 
@@ -48,7 +48,7 @@ In Gantt, the Excel export provides an option to export hidden columns by defini
 
 ### Show or hide columns on exported Excel
 
-In Gantt, while exporting, you can show a hidden column or hide a visible column using the [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ToolbarClick) and [`ExcelExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ExcelExportComplete) events.
+In Gantt, while exporting, you can show a hidden column or hide a visible column using the [`ToolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~ToolbarClick.html) and [`ExcelExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~ExcelExportComplete.html) events.
 
 In the `ToolbarClick` event, using the `args.item.id` property, you can show or hide columns by setting the `Columns.Visible` property to `true` or `false` respectively.
 
@@ -60,7 +60,7 @@ Similarly, in the excelExportComplete event, you can revert the columns visibili
 
 ### Cell formatting during export
 
-In Gantt, you can customize the TreeGrid cells in the exported document using the [`ExcelQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ExcelQueryCellInfo) event. In this event, you can format the TreeGrid cells of exported Excel and CSV documents based on the required condition.
+In Gantt, you can customize the TreeGrid cells in the exported document using the [`ExcelQueryCellInfo`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~ExcelQueryCellInfo.html) event. In this event, you can format the TreeGrid cells of exported Excel and CSV documents based on the required condition.
 
 In the following sample, the background color has been customized for `TaskId` column in the exported Excel using the `args.style` and `backColor` properties.
 
@@ -93,5 +93,13 @@ The Excel export also allows users to include header and footer contents to the 
 You can set the required file name for the exported document by defining the `fileName` property in `ExcelExportProperties`.
 
 {% aspTab template="gantt/excel-export/fileName", sourceFiles="fileName.cs" %}
+
+{% endaspTab %}
+
+## Custom data source
+
+The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the `dataSource` in `exportProperties`.
+
+{% aspTab template="gantt/excel-export/customDataSource", sourceFiles="customDataSource.cs" %}
 
 {% endaspTab %}
