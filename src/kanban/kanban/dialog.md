@@ -53,7 +53,7 @@ The following types are available in dialog fields.
 
 > If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
-{% aspTab template="kanban/dialog/custom-fields.PNG", sourceFiles="controller.cs,datasource.cs" %}
+{% aspTab template="kanban/dialog/custom-fields", sourceFiles="controller.cs,datasource.cs" %}
 
 {% endaspTab %}
 
