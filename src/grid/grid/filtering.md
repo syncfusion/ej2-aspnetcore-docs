@@ -129,3 +129,4 @@ You can enable Excel like filter by defining.
 
 * [Customizing filter menu operators list](./how-to/customizing-filter-menu-operators-list)
 * [Customizing Filter Dialog by using an additional parameter](./how-to/add-params-for-filtering)
+* [Hide sorting options on Excel filter Dialog](./how-to/hide-sorting-in-excel-filter)

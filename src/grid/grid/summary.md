@@ -68,3 +68,4 @@
 * [Display null date values at the bottom of the grid](grid/how-to/display-null-values-at-bottom.md)
 * [Enable editing in single click](grid/how-to/enable-editing-in-single-click.md)
 * [Cascading DropDownList with Grid editing](grid/how-to/cascading-drop-down-list-with-grid-editing.md)
+* [Hide sorting options on Excel filter Dialog](grid/how-to/hide-sorting-in-excel-filter.md)
