@@ -8,6 +8,8 @@ description: "Virtual Scrolling allows user to load large amount of data without
 
 # Virtual Scrolling
 
+## Virtual Scrolling
+
 The virtual scrolling option allows you to load the large amounts of data without performance degradation by rendering rows and columns only in the content viewport. The data will refresh dynamically on vertical or horizontal scroll. This feature can be enabled by setting the [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**.
 
 {% aspTab template="pivot-table/virtual-scrolling", sourceFiles="VirtualScrolling.cs" %}
@@ -47,3 +49,11 @@ When we bind one million raw data, the pivot table will process all raw data to 
 * If you use any of the aggregations above, it will result in an aggregation type **"Sum"**.
 * Distinctcount will act as **"Count"** aggregation type.
 * In the calculated field, an existing field can be inserted without altering its default aggregation type Even if we change it, it would use the default aggregation type back for calculation.
+
+## Virtual scrolling for static field list
+
+Virtual scrolling automatically works with "Popup" field list on setting the [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property in the Pivot Table to **true**. Incase of static field list, which act as a separate component, user need to enable [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property in the Pivot Table and also pass the report information to pivot table instance via the [`load`](https://ej2.syncfusion.com/documentation/common/api-l10n.html#load) event of the field list.
+
+{% aspTab template="pivot-table/field-list/static-fieldlist-virtualization", sourceFiles="virtualization.cs" %}
+
+{% endaspTab %}
