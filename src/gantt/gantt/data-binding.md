@@ -93,6 +93,64 @@ You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the d
 
 >Note: If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
+## Split task
+
+The `Split-task` feature allows you to split a task or interrupt the work during planned or unforeseen circumstances.
+We can split the task either in load time or dynamically, by defining the segments either in hierarchical or self-referential way.
+
+### Hierarchical
+
+To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [`taskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
+
+```html
+
+GanttDataSource Record2Child1 = new GanttDataSource()
+            {
+                TaskId = 3,
+                TaskName = "Plan timeline",
+                StartDate = new DateTime(2019, 02, 04),
+                EndDate = new DateTime(2019, 02, 10),
+                Duration = 10,
+                Progress = 60,
+                Segments = new List<GanttSegment>
+                {
+                    new GanttSegment {StartDate = new DateTime(2019,02,04), Duration = 2},
+                    new GanttSegment {StartDate = new DateTime(2019,02,05), Duration = 5},
+                    new GanttSegment {StartDate = new DateTime(2019,02,08), Duration = 3}
+                }
+            };
+
+```
+
+{% aspTab template="gantt/data-binding/split-task", sourceFiles="split-task.cs" %}
+
+{% endaspTab %}
+
+![Alt text](images/split-tasks.png)
+
+### Self-referential
+
+We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt/#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
+
+```html
+
+  GanttSegment Record1 = new GanttSegment()
+            {
+                segmentId = 2,
+                Duration = 2,
+                StartDate = new DateTime(2019, 04, 02),
+            };
+
+```
+
+{% aspTab template="gantt/data-binding/split-selfreference", sourceFiles="split-selfreference.cs" %}
+
+{% endaspTab %}
+
+![Alt text](images/split-tasks.png)
+
+>Note: Segment id field contains id of a task which should be split at load time.
+
 ## Limitations
 
 Gantt has the support for both Hierarchical and Self-Referential data binding. When rendering the Gantt control with SQL database, we suggest you to use the Self-Referential data binding to maintain the parent-child relation. Because the complex json structure is very difficult to manage it in SQL tables, we need to write a complex queries and we have to write a complex algorithm to find out the proper record details while updating/deleting the inner level task in Gantt data source. We cannot implement both data binding for Gantt control and this is not a recommended way. If  both child and parentID are mapped, the records will not render properly because, when task id of a record defined in the hierarchy structure is assigned to parent id of another record, in such case the records will not properly render. As the self-referential will search the record with particular id in flat data only, not in the inner level of records. If we map the parentID field,  it will be prioritized and Gantt will be rendered based on the parentID values.
