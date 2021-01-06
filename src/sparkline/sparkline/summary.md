@@ -9,4 +9,4 @@
 * [User interaction](sparkline/user-interaction.md)
 * [Appearance](sparkline/appearance.md)
 * [Localization](sparkline/localization.md)
-* [Migration from Essential JS 1](ej1-api-migration.md)
+* [Migration from Essential JS 1](sparkline/ej1-api-migration.md)
