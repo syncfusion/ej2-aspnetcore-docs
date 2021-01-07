@@ -1,7 +1,7 @@
 ---
 title: "CSS Structures | Spinner"
 component: "Spinner"
-description: "This example demonstratesthe details of the CSS structures in the Essential JS 2 Spinner component based on theme."
+description: "This example demonstratesthe details of the CSS structures in the Spinner component based on theme."
 ---
 
 # CSS structures

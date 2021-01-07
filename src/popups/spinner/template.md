@@ -1,7 +1,7 @@
 ---
 title: "Template"
 component: "Spinner"
-description: "This section explains how to customize the Essential JS 2 Spinner component based on different needs."
+description: "This section explains how to customize the Spinner component based on different needs."
 ---
 
 # Set the template to the Spinner

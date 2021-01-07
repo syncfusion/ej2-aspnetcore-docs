@@ -1,7 +1,7 @@
 ---
 title: "Types"
 component: "Spinner"
-description: "This example demonstrates how to change the type of the Essential JS 2 Spinner component based on theme."
+description: "This example demonstrates how to change the type of the Spinner component based on theme."
 ---
 
 # Change the type of the Spinner
