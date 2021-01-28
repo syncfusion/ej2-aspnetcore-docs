@@ -76,3 +76,11 @@ You can assign the file name for the exported document by defining fileName prop
 {% aspTab template="tree-grid/excel-export/file-name", sourceFiles="file-name.cs" %}
 
 {% endaspTab %}
+
+### To persist collapsed state
+
+You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of **excelExport** method.
+
+{% aspTab template="tree-grid/excel-export/is-collapsed", sourceFiles="is-collapsed.cs" %}
+
+{% endaspTab %}
