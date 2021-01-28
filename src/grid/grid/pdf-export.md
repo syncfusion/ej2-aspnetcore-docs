@@ -320,3 +320,25 @@ In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQue
 {% aspTab template="grid/pdf-export/repeat-header", sourceFiles="repeat-header" %}
 
 {% endaspTab %}
+
+## Exporting Grid in server
+
+The Grid have an option to export the data to PDF in server side using Grid server export library.
+
+### Server Dependencies
+
+The Server side export functionality is shipped in the Syncfusion.EJ2.GridExport package, which is available in Essential Studio and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for Grid server side PDF exporting action.
+
+* Syncfusion.EJ2
+* Syncfusion.EJ2.GridExport
+
+### Server Configuration
+
+The following code snippet shows server configuration using ASP.NET Core Controller Action.
+
+To Export the Grid in server side, You need to call the
+ [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverpdfexport) method for passing the Grid properties to server exporting action.
+
+{% aspTab template="grid/pdf-export/server-export", sourceFiles="server-exportCore.cs" %}
+
+{% endaspTab %}

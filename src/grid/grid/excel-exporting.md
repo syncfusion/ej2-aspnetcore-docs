@@ -145,3 +145,25 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 * Microsoft Excel permits up to seven nested levels in outlines. So that in the grid we can able to provide only up to seven nested levels
   and if it exceeds more than seven levels then the document will be exported without outline option.
   Please refer the [Microsoft Limitation](https://docs.microsoft.com/en-us/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs?view=sql-server-2017#ExcelLimitations)
+
+## Exporting Grid in server
+
+The Grid have an option to export the data to Excel in server side using Grid server export library.
+
+### Server Dependencies
+
+The Server side export functionality is shipped in the Syncfusion.EJ2.GridExport package, which is available in Essential Studio and [nuget.org](https://www.nuget.org/).The following list of dependencies is required for Grid server side Excel exporting action.
+
+* Syncfusion.EJ2
+* Syncfusion.EJ2.GridExport
+
+### Server Configuration
+
+The following code snippet shows server configuration using ASP.NET Core Controller Action.
+
+To Export the Grid in server side, You need to call the
+ [`serverExcelExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverexcelexport) method for passing the Grid properties to server exporting action.
+
+{% aspTab template="grid/excel-export/server-export", sourceFiles="server-exportCore.cs" %}
+
+{% endaspTab %}
