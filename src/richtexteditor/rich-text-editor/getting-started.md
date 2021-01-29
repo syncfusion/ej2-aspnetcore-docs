@@ -46,6 +46,14 @@ Specifies the items to be rendered in quick toolbar based on the target element 
 
 {% endaspTab %}
 
+## Send formatted content using XmlHttpRequest
+
+The Html string of the Rich Text Editor can be passed from View to the Controller through the `XMLHttpRequest` `Post` action. The HTML value binds to the corresponding mapped controller, and you can access it in the Post action parameter.
+
+{% aspTab template="rich-text-editor/basic/rtevalue", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
 ## Retrieve the Formatted Content
 
 To retrieve the editor contents, use [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property of Rich Text Editor.
