@@ -23,7 +23,7 @@
 * [Hyperlink](pivot-table/hyper-link.md)
 * [Toolbar](pivot-table/tool-bar.md)
 * [Tooltip](pivot-table/tool-tip.md)
-* [Css Customization](pivot-table/css-customization.md)
+* [Style and Appearance](pivot-table/css-customization.md)
 * [Globalization](pivot-table/globalization-and-localization.md)
 * [Excel Exporting](pivot-table/excel-export.md)
 * [PDF Exporting](pivot-table/pdf-export.md)
