@@ -21,4 +21,4 @@
 * [Excel Export](tree-grid/excel-export.md)
 * [Clipboard](tree-grid/clipboard.md)
 * [Accessibility](tree-grid/accessibility.md)
-* [Styling and appearance](tree-grid/how-to/treegrid-styling.md)
+* [Styling and appearance](tree-grid/treegrid-styling.md)

@@ -92,6 +92,20 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 > Based on the RESTful web services, set the corresponding adaptor to DataManager. Refer [`here`](https://ej2.syncfusion.com/documentation/data/adaptors/?no-cache=1) for more details.
 > Filtering and searching server-side data operations are not supported in load on demand
 
+### LoadChildOnDemand
+
+While binding remote data to Tree Grid component, by default Tree Grid renders parent rows in collapsed state. Tree Grid provides option to load the child records also during the initial rendering itself for remote data binding by setting [`loadChildOnDemand`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_LoadChildOnDemand) as true.
+
+When [`loadChildOnDemand`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_LoadChildOnDemand) is enabled parent records are rendered in expanded state.
+
+The following code example describes the behavior of the LoadChildOnDemand feature of Tree Grid.
+
+{% aspTab template="tree-grid/data-binding-core/load-child-onDemand", sourceFiles="loadChildOnDemand.cs" %}
+
+{% endaspTab %}
+
+> Also while using **LoadChildOnDemand** we need to handle the child records on server end and it is applicable to CRUD operations also.
+
 ### Offline Mode
 
 On remote data binding, all treegrid actions such as paging, loading child on-demand, will be processed on server-side. To avoid postback, set the treegrid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the **offline** property of **DataManager**.
