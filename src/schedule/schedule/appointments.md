@@ -296,9 +296,9 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 
 ### Drag and drop items from external source
 
-It is possible to drag and drop the unplanned items from any of the external source into the scheduler.
+It is possible to drag and drop the unplanned items from any of the external source into the scheduler, by manually saving those dropped item as a new appointment data through `addEvent` method of Scheduler.
 
-In this example, we have used the tree view control as an external source and the child nodes from the tree view component are dragged and dropped onto the Scheduler. Within the `actionBegin` event of scheduler, the dragged item from the TreeView control is removed, when it is being dragged and dropped onto the scheduler. When the item is being dropped onto the scheduler, the event editor is explicitly made to open with the target details by invoking the `openEditor` method of scheduler within the `nodeDragStop` event of TreeView.
+In this example, we have used the tree view control as an external source and the child nodes from the tree view component are dragged and dropped onto the Scheduler. Therefore, it is necessary to make use of the `nodeDragStop` event of the TreeView component, where we can form an event object and save it using the `addEvent` method.
 
 {% aspTab template="schedule/appointments/external-drag", sourceFiles="data.cs"  %}
 
