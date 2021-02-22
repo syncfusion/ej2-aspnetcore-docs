@@ -5,6 +5,6 @@
 * [Pane content](splitter/pane-content.md)
 * [Pane sizing](splitter/pane-sizing.md)
 * [Different layouts](splitter/different-layouts.md)
-* [CSS Structure](splitter/style.md)
+* [Style and appearance](splitter/style.md)
 * [Globalization](splitter/globalization.md)
 * [Migration from Essential JS 1](splitter/ej1-api-migration.md)
