@@ -16,7 +16,7 @@
 * [Inline Mode](rich-text-editor/inline-mode.md)
 * [Paste from MS Word](rich-text-editor/paste-cleanup.md)
 * [Iframe Rendering](rich-text-editor/iframe.md)
-* [CSS Structure](rich-text-editor/style.md)
+* [Style and appearance](rich-text-editor/style.md)
 * [ExecCommand in Rich Text Editor](rich-text-editor/exec-command.md)
 * [Keyboard support](rich-text-editor/keyboard-support.md)
 * [Accessibility](rich-text-editor/accessibility.md)
