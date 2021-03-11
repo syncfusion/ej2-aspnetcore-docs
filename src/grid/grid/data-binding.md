@@ -248,10 +248,9 @@ For this we need to install **Microsoft.AspNetCore.Mvc.NewtonsoftJson** package.
 ```javascript
   public void ConfigureServices(IServiceCollection services)
           {
-                      services.AddMvc().AddNewtonsoftJson(options =>
-          {
-                 options.SerializerSettings.ContractResolver =
-                    new DefaultContractResolver());
-            }
-        }
+            services.AddMvc().AddNewtonsoftJson(options => 
+            { 
+                options.SerializerSettings.ContractResolver = new DefaultContractResolver(); 
+            });
+           }
 ```
