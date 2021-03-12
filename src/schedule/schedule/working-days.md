@@ -49,6 +49,24 @@ It is possible to show the week number count of a week in the header bar of the 
 
 {% endaspTab %}
 
+### Different options in showing week numbers
+
+By default, week numbers are shown in the Scheduler based on the first day of the year. However, the week numbers can be determined based on the following criteria.
+
+`FirstDay` – The first week of the year is calculated based on the first day of the year.
+
+`FirstFourDayWeek` – The first week of the year begins from the first week with four or more days.
+
+`FirstFullWeek` – The first week of the year begins when meeting the first day of the week (firstDayOfWeek) and the first day of the year.
+
+For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
+
+{% aspTab template="schedule/working-days/week-rule", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
+ **Note**: Enable the `showWeekNumber` property to configure the `weekRule` property. Also, the weekRule property depends on the value of the `firstDayOfWeek` property.
+
 ## Set working hours
 
 Working hours indicates the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on Scheduler using the `workHours` property which is of object type and includes the following sub-options,
