@@ -121,6 +121,14 @@ Axis also supports custom label format using placeholder like {value}°C, in whi
 
 {% endaspTab %}
 
+## Orientation
+
+By default, the Linear Gauge is rendered vertically. To change its orientation, the [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Orientation.html) property must be set to **"Horizontal"**
+
+{% aspTab template="lineargauge/axes/orientation", sourceFiles="orientation.cs" %}
+
+{% endaspTab %}
+
 ## Inverted Axes
 
 [`isInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_IsInversed) property is used to choose the rendering of axis either bottom to top or top to bottom direction.
