@@ -71,6 +71,13 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 
 {% endaspTab %}
 
+### Export with filter options
+
+The excel export provides an option to export with filter option in excel by defining `enableFilter` as **true** .
+It requires the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to be true.
+
+{% aspTab template="grid/excel-export/enable-filter", sourceFiles="enable-filter.cs" %}
+
 ### Conditional Cell Formatting
 
 Grid cells in the exported Excel can be customized or formatted using [`excelQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelQueryCellInfo) event. In this event, we can format the grid cells of exported PDF document based on the column cell value.
