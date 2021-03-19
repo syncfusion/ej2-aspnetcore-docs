@@ -6,17 +6,16 @@ description: "Learn how to Display custom ToolTip for columns in Grid."
 
 # Display custom ToolTip for columns in Grid
 
-To display custom ToolTip **EJ2 Tooltip**, use the
-[`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
+To display a custom ToolTip (**EJ2 Tooltip**), you can render the Grid control inside the Tooltip component and set the target as “.e-rowcell”. The tooltip is displayed when hovering the grid cells.
 
-Render the ToolTip component for the grid cells by using the following code in the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
+Change the tooltip content for the grid cells by using the following code in the  (**beforeRender**) event.
 
 ```typescript
 
-function tooltip (args) {
-    var tooltip = new ej.popups.Tooltip({
-        content: args.data[args.column.field].toString();
-    }, args.cell);
+function beforeRender(args) {
+        // event triggered before render the tooltip on target element.
+        var tooltip = document.getElementById("Tooltip").ej2_instances[0]
+        tooltip.content = args.target.closest("td").innerText;
 }
 
 ```
