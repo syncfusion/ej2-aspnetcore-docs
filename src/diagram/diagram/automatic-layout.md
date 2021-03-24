@@ -244,6 +244,16 @@ The following code illustrates how to allow a linear arrangement in diagram layo
 
 ```
 
+### Prevent connectors overlay
+
+The below constraints prevents the connector segments overlapping nodes with a complex hierarchical layout.
+
+```cs
+
+    DiagramLayout arrangementValue = new DiagramLayout() { Arrangement = ChildArrangement.Linear};
+
+```
+
 ## Customize layout
 
 Orientation, spacings, and position of the layout can be customized with a set of properties.

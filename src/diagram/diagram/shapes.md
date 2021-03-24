@@ -72,6 +72,14 @@ Html elements can be embedded in the diagram through [`Html`](https://help.syncf
 
 >Note: HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation.
 
+## HTML Node With Template
+
+Html elements can be embedded in the diagram using [`Html`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) type node. The shape property of the node allows you to set the type of node. The following code shows how an Html node is created with a template.
+
+{% aspTab template="diagram/shapes/HTML_Template", sourceFiles="HTML_Node_ With_Template.cshtml" %}
+
+{% endaspTab %}
+
 ## Native
 
 Diagram provides support to embed SVG element into a node. The shape property of node allows you to set the type of node. To create a [`native`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) node, it should be set as **native**. The following code illustrates how a native node is created.
