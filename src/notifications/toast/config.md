@@ -30,6 +30,10 @@ By default, the [`showCloseButton`](https://help.syncfusion.com/cr/aspnetcore-js
 
 By default, the [`showProgressBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_ShowProgressBar) is not enabled. If it is enabled, it can visually indicate how long to get toast expires. Based on the [`timeOut`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_TimeOut) property, progress bar will appear.
 
+### Progress bar direction
+
+By default, the [progressDirection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_ProgressDirection) is set to "Rtl" and it will appear from right to left direction. You can change the progressDirection to "Ltr" to make it appear from left to right direction.
+
 ## Newest on top
 
 By default, the newly created toasts will append next with existing toasts. You can change the sequence like inserting before the toast by enabling the [`newestOnTop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_NewestOnTop).
