@@ -244,6 +244,16 @@ Appointments can be rescheduled to any time by dragging and dropping them onto t
 
 > By default, drag and drop action is applicable on all Scheduler views, except Agenda, Month-Agenda and Year view.
 
+### Drag and drop multiple appointments
+
+We can drag and drop multiple appointments by enabling the `allowMultiDrag` property. We can select multiple appointments by holding the CTRL key. Once the events are selected, we can leave the CTRL key and start dragging the event.
+
+We can also drag multiple events from one resource to another resource. In this case, if all the selected events are in the different resources, then all the events should be moved to the single resource that is related to the target event.
+
+{% aspTab template="schedule/appointments/multiple-drag", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
 ### Disable the drag action
 
 By default, you can drag and drop the events within any of the applicable scheduler views, and to disable it, set **false** to the `allowDragAndDrop` property.
