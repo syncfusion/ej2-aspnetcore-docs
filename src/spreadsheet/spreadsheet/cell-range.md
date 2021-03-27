@@ -24,6 +24,13 @@ The following code example shows the wrap text functionality in spreadsheet.
 
 {% endaspTab %}
 
+### Limitation of Wrap text
+
+The following features have some limitations in wrap text:
+
+* Sorting with wrap text applied data.
+* Merge with wrap text
+
 ## Merge cells
 
 Merge cells allows users to span two or more cells in the same row or column into a single cell. When cells with multiple values are merged, top-left most cell data will be the data for the merged cell. By default, the merge cells option is enabled. Use [`allowMerge`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowMerge) property to enable or disable the merge cells option in spreadsheet.
@@ -48,6 +55,68 @@ The following code example shows the merge cells operation in spreadsheet.
 {% aspTab template="spreadsheet/merge-cells", sourceFiles="mergeCellController.cs" %}
 
 {% endaspTab %}
+
+### Limitation of Merge
+
+The following features have some limitations in Merge:
+
+* Merge with filter.
+* Merge with wrap text.
+
+## Data Validation
+
+Data Validation is used to restrict the user from entering the invalid data. You can use the [`allowDataValidation`](../api/spreadsheet/#allowDataValidation) property to enable or disable data validation.
+
+> * The default value for `allowDataValidation` property is `true`.
+
+### Apply Validation
+
+You can apply data validation to restrict the type of data or the values that users enter into a cell.
+
+You can apply data validation by using one of the following ways,
+
+* Select the Data tab in the Ribbon toolbar, and then choose the Data Validation item.
+* Use the [`addDataValidation()`](../api/spreadsheet/#addDataValidation) method programmatically.
+
+### Clear Validation
+
+Clear validation feature is used to remove data validations from the specified ranges or the whole worksheet.
+
+You can clear data validation rule by one of the following ways,
+
+* Select the Data tab in the Ribbon toolbar, and then choose the Clear Validation item.
+* Use the [`removeDataValidation()`](../api/spreadsheet/#removeDataValidation) method programmatically.
+
+### Highlight Invalid Data
+
+Highlight invalid data feature is used to highlight the previously entered invalid values.
+
+You can highlight an invalid data by using one of the following ways,
+
+* Select the Data tab in the Ribbon toolbar, and then choose the Highlight Invalid Data item.
+* Use the [`addInvalidHighlight()`](../api/spreadsheet/#addInvalidHighlight) method programmatically.
+
+### Clear Highlighted Invalid Data
+
+Clear highlight feature is used to remove the highlight from invalid cells.
+
+You can clear the highlighted invalid data by using the following ways,
+
+* Select the Data tab in the Ribbon toolbar, and then choose the Clear Highlight item.
+* Use the [`removeInvalidHighlight()`](../api/spreadsheet/#removeInvalidHighlight) method programmatically.
+
+{% aspTab template="spreadsheet/data-validation", sourceFiles="dataValidation.cs" %}
+
+{% endaspTab %}
+
+### Limitation of Data validation
+
+The following features have some limitations in Data Validation:
+
+* Entire row data validation.
+* Insert row between the data validation.
+* Copy/paste with data validation.
+* Delete cells between data validation applied range.
 
 ## See Also
 

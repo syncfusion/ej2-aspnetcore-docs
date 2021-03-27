@@ -55,3 +55,7 @@ Go to feature is used to navigate to a specific cell address in the sheet or wor
 {% aspTab template="spreadsheet/search", sourceFiles="searchController.cs" %}
 
 {% endaspTab %}
+
+## Limitation
+
+* Undo/redo for Replace All is not supported in this feature.

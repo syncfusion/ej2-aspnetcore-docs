@@ -40,6 +40,10 @@ The following code example shows the number formatting in cell data.
 
 {% endaspTab %}
 
+### Limitation of Number Formatting
+
+* Custom number formatting is not supported.
+
 ## Text and cell formatting
 
 Text and cell formatting enhances the look and feel of your cell. It helps to highlight a particular cell or range of cells from a whole workbook. You can apply formats like font size, font family, font color, text alignment, border etc. to a cell or range of cells. Use the [`allowCellFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowCellFormatting) property to enable or disable the text and cell formatting option in Spreadsheet. You can set the formats in following ways,
@@ -102,6 +106,13 @@ The following code example shows the style formatting in text and cells of the s
 {% aspTab template="spreadsheet/cell-format", sourceFiles="cellFormatController.cs" %}
 
 {% endaspTab %}
+
+### Limitation of Formatting
+
+The following features are not supported in Formatting:
+
+* Insert row/column between the formatting applied cells.
+* Formatting support for row/column.
 
 ## Conditional Formatting
 
@@ -185,6 +196,15 @@ You can clear the defined rules by using one of the following ways,
 {% aspTab template="spreadsheet/conditional-formatting", sourceFiles="conditionalFormattingController.cs" %}
 
 {% endaspTab %}
+
+### Limitation of Conditional formatting
+
+The following features have some limitations in Conditional Formatting:
+
+* Insert row/column between the conditional formatting.
+* Conditional formatting with formula support.
+* Copy and paste the conditional formatting applied cells.
+* Custom rule support.
 
 ## See Also
 

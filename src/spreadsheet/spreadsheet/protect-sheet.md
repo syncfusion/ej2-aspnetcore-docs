@@ -66,6 +66,10 @@ In protected spreadsheet, to make some particular cell or range of cells are edi
 
 {% endaspTab %}
 
+## Limitation
+
+* Password protection is not supported in Protect sheet feature.
+
 ## See Also
 
 * [Hyperlink](./link)

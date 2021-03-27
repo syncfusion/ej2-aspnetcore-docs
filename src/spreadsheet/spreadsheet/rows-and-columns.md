@@ -83,6 +83,15 @@ The following code example shows the hide/show rows and columns operation in the
 
 {% endaspTab %}
 
+## Limitation
+
+The following features have some limitations in Insert/Delete:
+
+* Insert row/column between the formatting applied cells.
+* Insert row/column between the data validation.
+* Insert row/column between the conditional formatting applied cells.
+* Insert/delete row/column between the filter applied cells.
+
 ## See Also
 
 * [Hyperlink](./link)

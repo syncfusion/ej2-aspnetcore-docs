@@ -52,6 +52,10 @@ There is an event named `beforeHyperlinkClick` which triggers only on clicking h
 
 {% endaspTab %}
 
+## Limitation
+
+* Inserting multiple hyperlinks after selecting multiple ranges is not supported in Hyperlink.
+
 ## See Also
 
 * [Sorting](./sort)
