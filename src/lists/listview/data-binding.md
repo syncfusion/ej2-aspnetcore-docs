@@ -6,7 +6,7 @@ description: "ListView supports data binding to display the list of items from l
 
 # Data binding
 
-ListView provides an option to load the data either from local dataSource or remote data services. This can be done through the dataSource property that supports the data type of array or [`DataManager`](http://npmci.syncfusion.com/development/documentation/data/api-dataManager.html).
+ListView provides an option to load the data either from local dataSource or remote data services. This can be done through the dataSource property that supports the data type of array or [`DataManager`](http://ej2.syncfusion.com/development/documentation/data/api-dataManager.html).
 
 ListView supports different kind of data services such as OData, OData V4, and Web API, and data formats like XML, JSON, and, JSONP with the help of DataManager Adaptors.
 
