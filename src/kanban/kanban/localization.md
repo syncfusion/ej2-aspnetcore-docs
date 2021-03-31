@@ -15,6 +15,18 @@ In Kanban, total count and min or max count text alone will be localized based o
 | items |  items |
 | min |  Min |
 | max |  Max |
+| cardsSelected | Cards Selected |
+| addTitle | Add New Card |
+| editTitle | Edit Card Details |
+| deleteTitle | Delete Card |
+| deleteContent | Are you sure you want to delete this card? |
+| save | Save |
+| delete | Delete |
+| cancel | Cancel |
+| yes | Yes |
+| no | No |
+| close | Close |
+| noCard | No cards to display |
 
 ## Loading translations
 
