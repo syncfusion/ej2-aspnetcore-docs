@@ -62,3 +62,11 @@ You can use the created conditions in DataManager through the `getPredicate` met
 {% aspTab template="query-builder/data-binding/data-manager", sourceFiles="default.cs" %}
 
 {% endaspTab %}
+
+## Grid Integration with QueryBuilder
+
+This section explains how to integrate Grid with QueryBuilder. We have used `UrlAdaptor` to load dataSource to Grid, and the dataSource property is optional for QueryBuilder. So, you can create QueryBuilder with only columns. QueryBuilder interacts with Grid through the `Query` property of a Grid. You can get the query from QueryBuilder and update the Grid Query property in the `ruleChange` event of QueryBuilder. The `UrlAdaptor` works based on the on-demand concept, it will load only current page records from the server and request the next page records when navigating to the next page. Also, we have sent the request to the server for every action performed in the Grid.
+
+{% aspTab template="query-builder/data-binding/grid-integration", sourceFiles="HomeController.cs" %}
+
+{% endaspTab %}
