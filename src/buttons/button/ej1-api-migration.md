@@ -1,7 +1,7 @@
 ---
 title: "Migration from Essential JS 1"
 component: "Button"
-description: "Explains the common steps for migrating from Essential JS 1 application to Essential JS 2 components especially, button component."
+description: "Explains the common step for migrating from Essential JS 1 application to Essential JS 2 components especially, button component."
 ---
 
 # Migration from Essential JS 1

@@ -1,5 +1,5 @@
 ---
-title: "Button Getting Started"
+title: "Buttons Getting Started"
 component: "Button"
 description: "This section helps to learn how to create the button in ASP.NET Core application with its basic features in step-by-step procedure."
 ---
