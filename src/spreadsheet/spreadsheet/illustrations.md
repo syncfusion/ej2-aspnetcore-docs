@@ -69,7 +69,7 @@ Image feature allows you to view and insert a image in a spreadsheet and you can
 
 {% endaspTab %}
 
-### Limitation of Image
+### Limitations of Image
 
 The following features have some limitations in Image:
 
@@ -137,7 +137,7 @@ Chart feature allows you to view and insert a chart in a spreadsheet, and you ca
 
 {% endaspTab %}
 
-### Limitation of Chart
+### Limitations of Chart
 
 The following features have some limitations in the Chart:
 

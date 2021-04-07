@@ -45,7 +45,7 @@ In this demo, the frozenColumns is set as ‘2’, and the frozenRows is set as 
 
 {% endaspTab %}
 
-## Limitation
+## Limitations
 
 Freeze Panes feature is not compatible with all the features which are available in the spreadsheet and it has limited features support. Here, we have listed out the features which are not compatible with Freeze Panes feature.
 

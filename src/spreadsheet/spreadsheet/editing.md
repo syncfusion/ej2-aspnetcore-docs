@@ -39,7 +39,7 @@ The following code example shows the editing operation in spreadsheet.
 
 {% endaspTab %}
 
-## Limitation
+## Limitations
 
 * Text overflow in cells is not supported in Editing.
 

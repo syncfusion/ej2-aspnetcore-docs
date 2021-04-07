@@ -83,7 +83,7 @@ The following code example shows the hide/show rows and columns operation in the
 
 {% endaspTab %}
 
-## Limitation
+## Limitations
 
 The following features have some limitations in Insert/Delete:
 

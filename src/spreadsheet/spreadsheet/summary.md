@@ -19,6 +19,7 @@
 * [Freeze Panes](spreadsheet/freeze-pane.md)
 * [Context Menu](spreadsheet/context-menu.md)
 * [Templates](spreadsheet/template.md)
+* [Globalization](spreadsheet/global-local.md)
 * [Sort a range by custom list](spreadsheet/how-to/sort-a-range-by-custom-list.md)
 * [Collaborative Editing](spreadsheet/use-cases/collaborative-editing.md)
 * [Mobile Responsiveness](spreadsheet/mobile-responsiveness.md)

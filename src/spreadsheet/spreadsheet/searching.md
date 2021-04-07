@@ -56,6 +56,6 @@ Go to feature is used to navigate to a specific cell address in the sheet or wor
 
 {% endaspTab %}
 
-## Limitation
+## Limitations
 
 * Undo/redo for Replace All is not supported in this feature.

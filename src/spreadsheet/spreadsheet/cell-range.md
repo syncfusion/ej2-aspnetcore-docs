@@ -24,7 +24,7 @@ The following code example shows the wrap text functionality in spreadsheet.
 
 {% endaspTab %}
 
-### Limitation of Wrap text
+### Limitations of Wrap text
 
 The following features have some limitations in wrap text:
 
@@ -56,7 +56,7 @@ The following code example shows the merge cells operation in spreadsheet.
 
 {% endaspTab %}
 
-### Limitation of Merge
+### Limitations of Merge
 
 The following features have some limitations in Merge:
 
@@ -109,7 +109,7 @@ You can clear the highlighted invalid data by using the following ways,
 
 {% endaspTab %}
 
-### Limitation of Data validation
+### Limitations of Data validation
 
 The following features have some limitations in Data Validation:
 

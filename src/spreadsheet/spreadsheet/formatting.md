@@ -40,7 +40,7 @@ The following code example shows the number formatting in cell data.
 
 {% endaspTab %}
 
-### Limitation of Number Formatting
+### Limitations of Number Formatting
 
 * Custom number formatting is not supported.
 
@@ -107,7 +107,7 @@ The following code example shows the style formatting in text and cells of the s
 
 {% endaspTab %}
 
-### Limitation of Formatting
+### Limitations of Formatting
 
 The following features are not supported in Formatting:
 
@@ -197,7 +197,7 @@ You can clear the defined rules by using one of the following ways,
 
 {% endaspTab %}
 
-### Limitation of Conditional formatting
+### Limitations of Conditional formatting
 
 The following features have some limitations in Conditional Formatting:
 
