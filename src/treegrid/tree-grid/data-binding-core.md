@@ -34,6 +34,8 @@ The following code example shows you how to bind the hierarchical local data int
 
 {% endaspTab %}
 
+> * Remote data binding is not supported for Hierarchy Data.
+
 ### Self-Referential Data binding (Flat Data)
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields, ID field and parent ID field.
