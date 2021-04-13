@@ -118,6 +118,34 @@ The following features have some limitations in Data Validation:
 * Copy/paste with data validation.
 * Delete cells between data validation applied range.
 
+## Clear
+
+Clear feature helps you to clear the cell contents (formulas and data), formats (including number formats, conditional formats, and borders) in a spreadsheet. The cleared cells will remain blank or unformatted or content on the worksheet.
+
+### Apply Clear Feature
+
+You can apply clear feature by using one of the following ways,
+
+* Select the clear icon in the Ribbon toolbar under the Home Tab.
+* Using the [`clear()`](../api/spreadsheet/#clear) method to clear the values.
+
+Clear has the following types in the spreadsheet,
+
+| Options | Uses |
+|-----|------|
+| `Clear All` | Used to clear all contents, formats, and hyperlinks.  |
+| `Clear Formats` | Used to clear the formats (including number formats, conditional formats, and borders) in a cell. |
+| `Clear Contents` | Used to clear the contents (formulas and data) in a cell. |
+| `Clear Hyperlinks` | Used to clear the hyperlink in a cell. |
+
+### Methods
+
+Clear the cell contents and formats in the Spreadsheet document by using the [clear](../api/spreadsheet/#clear) method. The [clear](../api/spreadsheet/#clear) method has `type` and `range` as parameters. The following code example shows how to clear the cell contents and formats in the button click event.
+
+{% aspTab template="spreadsheet/clear", sourceFiles="clearController.cs" %}
+
+{% endaspTab %}
+
 ## See Also
 
 * [Rows and columns](./rows-and-columns)
