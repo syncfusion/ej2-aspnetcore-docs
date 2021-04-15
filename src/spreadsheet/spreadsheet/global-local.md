@@ -376,7 +376,7 @@ IsProtected | is protected
 
 To load translation object in an application, use [`load`](../common/internationalization/#load) function of the [`L10n`](../common/internationalization) class.
 
-The following example demonstrates the Spreadsheet in `French` culture.
+The following example demonstrates the Spreadsheet in `French` culture. In the below sample we have translated the ribbon tab names and Home tab content (clipboard, cell style).
 
 {% aspTab template="spreadsheet/locale", sourceFiles="localeController.cs" %}
 

@@ -26,3 +26,4 @@
 * [Sort a range by custom list](spreadsheet/how-to/sort-a-range-by-custom-list.md)
 * [Collaborative Editing](spreadsheet/use-cases/collaborative-editing.md)
 * [Mobile Responsiveness](spreadsheet/mobile-responsiveness.md)
+* [Features Availability](spreadsheet/feature-list.md)
