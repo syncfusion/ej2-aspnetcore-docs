@@ -16,7 +16,7 @@ The Internationalization library provides support for formatting and parsing the
 
 By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
+Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
 
 ```cmd
 npm install cldr-data --save
@@ -24,17 +24,33 @@ npm install cldr-data --save
 
 Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
 
-* Now use the `loadCultureFiles` method to load the culture specific CLDR JSON data.
+Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
 
-Refer the culture files directly from `node_modules\cldr-data` location as like the below code example.
+* `wwwroot\cldr-data\supplemental`
+* `wwwroot\cldr-data\main`
+
+The files named as below are required to setup the specific culture to the Schedule.
+
+* numberingSystems.json
+* ca-gregorian.json
+* numbers.json
+* timeZoneNames.json
+* ca-islamic.json
+
+The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now you can move this file to the location `wwwroot\cldr-data\supplemental`.
+
+The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\de`. Now create a folder named `de` inside the location `wwwroot\cldr-data\main` and move the files inside it.
+
+Now use the `loadCultureFiles` method to load the culture specific CLDR JSON data.
 
 ```sh
-    function loadCultureFiles(de) {
+    loadCultureFiles('de');
+    function loadCultureFiles(name) {
         var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
         var loader = ej.base.loadCldr;
         var loadCulture = function (prop) {
             var val, ajax;
-            ajax = new ej.base.Ajax(location.origin + '/../node_modules/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            ajax = new ej.base.Ajax(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
             ajax.onSuccess = function (value) {
                 val = value;
             };
@@ -47,7 +63,7 @@ Refer the culture files directly from `node_modules\cldr-data` location as like 
     }
 ```
 
-* Set the culture to Scheduler by using the `locale` property.
+Set the culture to Scheduler by using the `locale` property.
 
 {% aspTab template="schedule/localization/internationalization", sourceFiles="data.cs"  %}
 
