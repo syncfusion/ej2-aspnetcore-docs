@@ -1,5 +1,6 @@
 * [Getting Started](switch/getting-started.md)
 * [Accessibility](switch/accessibility.md)
+* [Styles and Appearances](switch/style-and-appearance.md)
 * [Change Size](switch/how-to/change-size.md)
 * [Customize the appearance of a Switch](switch/how-to/customize-the-appearance-of-a-switch.md)
 * [Enable ripple for Switch label](switch/how-to/enable-ripple-for-switch-label.md)
