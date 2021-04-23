@@ -2,6 +2,7 @@
 * [Icons and Navigation](context-menu/icons-and-navigation.md)
 * [Template and Multilevel nesting](context-menu/template-and-multilevel-nesting.md)
 * [Accessibility](context-menu/accessibility.md)
+* [Styles and Appearances](context-menu/style-and-appearance.md)
 * [Data Binding](context-menu/how-to/data-binding.md)
 * [Open and close ContextMenu](context-menu/how-to/open-and-close-contextmenu.md)
 * [Template](context-menu/how-to/template.md)
