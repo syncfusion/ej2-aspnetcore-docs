@@ -155,6 +155,30 @@ The following image illustrates how resize the lane.
 The following image illustrates how swapping the lane.
 ![Lane Swapping](images/swapping.gif)
 
+### Disable Swimlane Lane swapping
+
+You can disable swimlane lane swapping by using the property called `canMove`.
+
+The following code illustrates how to disable swimlane lane swapping.
+
+```typescript
+ let node ={
+  id: 'Order',
+  shape: { type: 'Path', data: pathData },
+  annotations: [
+  {
+   content: 'ORDER',
+   style: { fontSize: 11 }
+   } ],
+  margin: { left: 60, top: 20 },
+  height: 40, width: 100,canMove: false
+ }
+
+let lane : nodeModel = diagram.nodes[0];
+swimlane.shape.lanes[0].childern[0]=node;
+diagram.dataBind();
+```
+
 ### Resize helper
 
 * The special resize helper will be used to resize the lanes.
