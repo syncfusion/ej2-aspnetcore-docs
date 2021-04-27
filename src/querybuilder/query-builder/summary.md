@@ -5,6 +5,7 @@
 * [Import and Export](query-builder/import-export.md)
 * [Localization](query-builder/global-local.md)
 * [Styles and Appearances](query-builder/style-and-appearance.md)
+* [Templates](query-builder/template.md)
 * [Change display mode](query-builder/how-to/display-mode.md)
 * [Sort the columns](query-builder/how-to/sort-columns.md)
 * [Restrict the groups](query-builder/how-to/restrict-groups.md)
