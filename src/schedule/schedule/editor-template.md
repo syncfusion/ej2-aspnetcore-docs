@@ -88,6 +88,14 @@ By default, these popups are displayed over cells and appointments of Scheduler 
 
 > The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
 
+### How to open Quick Info popup on multiple cell selection
+
+By default the `QuickInfo` popup will open on single click of the cell. To open the quick info popup on multiple cell selection, you need to select the cells and press `enter` key. You can open this popup immediately after multiple cell selection by setting up `true` to `quickInfoOnSelectionEnd` property where as its default value is `false`.
+
+{% aspTab template="schedule/editor-template/show-quick-info", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
 ### How to change the watermark text of quick popup subject
 
 By default, `Add Title` text is displayed on the subject field of quick popup. To change the default watermark text, change the value of the appropriate localized word collection used in the Scheduler.
