@@ -55,6 +55,14 @@ You can use `WebApiAdaptor` to bind query builder with Web API created using ODa
 
 {% endaspTab %}
 
+### Url adaptor
+
+You can use the UrlAdaptor of DataManager when binding data source from remote data. In the initial load of querybuilder, data are fetched from remote data and bound to the querybuilder using url property of DataManager.
+
+{% aspTab template="query-builder/data-binding/url-data", sourceFiles="url-data.cs" %}
+
+{% endaspTab %}
+
 ## Support with Data Manager
 
 You can use the created conditions in DataManager through the `getPredicate` method, which results the filtered records.

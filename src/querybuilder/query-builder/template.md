@@ -13,7 +13,3 @@ Header Template allows to define your own user interface for Header, which inclu
 {% aspTab template="query-builder/header-template", sourceFiles="default.cs" %}
 
 {% endaspTab %}
-
-Output be like the below.
-
-![querybuilder Sample](./images/header-template.png)
