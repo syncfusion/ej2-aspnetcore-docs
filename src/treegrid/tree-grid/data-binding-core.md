@@ -86,6 +86,8 @@ When a root node is expanded, its child nodes are rendered and are cached locall
 
 Similarly, if the user navigates to a new page, the root nodes of that specific page, will be rendered with request to the remote server.
 
+>Remote Data Binding supports only Self-Referential Data and by default the `pageSizeMode` for Remote Data is `Root` mode. i.e only root node’s count will be shown in pager while using Remote Data
+
 {% aspTab template="tree-grid/data-binding-core/remote-data", sourceFiles="remote.cs" %}
 
 {% endaspTab %}
