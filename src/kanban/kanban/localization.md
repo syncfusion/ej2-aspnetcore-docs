@@ -27,6 +27,7 @@ In Kanban, total count and min or max count text alone will be localized based o
 | no | No |
 | close | Close |
 | noCard | No cards to display |
+| unassigned | Unassigned |
 
 ## Loading translations
 
