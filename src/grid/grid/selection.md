@@ -124,16 +124,6 @@ The following screenshot represents a grid touch selection in the device.
 
 ![Touch interaction](./images/touch-selection.jpg)
 
-## Multiple Selection based on condition
-
-You can select multiple grid rows based on condition by using the **selectRows** method.
-
-In the following code, the rows which contains **ShipCountry** value as **Brazil** are selected at initial rendering.
-
-{% aspTab template="grid/selection/conditional-selection", sourceFiles="conditional-selection.cs" %}
-
-{% endaspTab %}
-
 ## Simple Multiple Row selection
 
 You can select multiple rows by clicking on rows one by one. This will not deselect the previously selected rows. To deselect the previously selected row, you can click on the  selected row. You can enable this behavior by using [`enableSimpleMultiRowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_EnableSimpleMultiRowSelection) property of **e-grid-selectionsettings** tag helper.
