@@ -382,6 +382,16 @@ The following example demonstrates the Spreadsheet in `French` culture. In the b
 
 {% endaspTab %}
 
+## Internationalization
+
+The Internationalization library is used to globalize number, date, and time values in the spreadsheet component.
+
+The following example demonstrates the Spreadsheet in French [ `fr-CH`] culture. In the below sample we have globalized the Date(Date column), Time(Time column), and Currency(Amount column) formats.
+
+{% aspTab template="spreadsheet/internationalization", sourceFiles="internationalizationController.cs" %}
+
+{% endaspTab %}
+
 ## Right to left (RTL)
 
 RTL provides an option to switch the text direction and layout of the Spreadsheet component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Spreadsheet, set the [`enableRtl`](../api/spreadsheet/#enablertl) to true.

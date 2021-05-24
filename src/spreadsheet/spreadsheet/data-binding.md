@@ -34,6 +34,22 @@ Refer to the following code example for remote data binding.
 
 > By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
+### Binding with OData services
+
+`OData` is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
+
+{% aspTab template="spreadsheet/odata-adaptor", sourceFiles="oDataController.cs" %}
+
+{% endaspTab %}
+
+### Web API
+
+You can use WebApiAdaptor to bind spreadsheet with Web API created using OData endpoint.
+
+{% aspTab template="spreadsheet/webapi-adaptor", sourceFiles="webApiController.cs" %}
+
+{% endaspTab %}
+
 ## Cell data binding
 
 The Spreadsheet control can bind the data to individual cell in a sheet . To achive this you can use the
@@ -46,6 +62,26 @@ Refer to the following code example for cell data binding.
 {% endaspTab %}
 
 > The cell data binding also supports formula, style, number format, and more.
+
+## Dynamic data binding and Datasource change event
+
+You can dynamically change the datasource of the spreadsheet by changing the `dataSource` property of the `range` object of the `sheet`. The `dataSourceChanged` event handler will be triggered when editing, inserting, and deleting a row in the datasource range. This event will be triggered with a parameter named `action` which indicates the `edit`, `add` and `delete` actions for the respective ones.
+
+The following table defines the arguments of the `dataSourceChanged` event.
+
+| Property | Type | Description |
+|-----|-----|-------|
+| action | string | Indicates the type of action such as `edit`, `add`, and `delete` performed in the datasource range. |
+| data | object[] | Modified data for `edit` action; New data for `add` action; Deleted data for `delete` action. |
+| rangeIndex | number | Specifies the range index of the datasource. |
+| sheetIndex | number | Specifies the sheet index of the datasource. |
+
+> For `add` action, the value for all the fields will be `null` in the data. In the case that you do not want the primary key field to be null which needs to be updated in the backend service, you can use `edit` action after updating the primary key field to update in the backend service. <br><br>
+> For inserting a row at the end of the datasource range, you should insert a row below at the end of the range to trigger the `dataSourceChanged` event with action `add`.
+
+{% aspTab template="spreadsheet/dynamic-data-binding", sourceFiles="dynamicDataController.cs" %}
+
+{% endaspTab %}
 
 ## See Also
 

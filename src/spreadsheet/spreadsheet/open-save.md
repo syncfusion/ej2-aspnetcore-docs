@@ -16,14 +16,30 @@ The Spreadsheet component opens an Excel document with its data, style, format, 
 
 In user interface you can open an Excel document by clicking `File > Open` menu item in ribbon.
 
-The following code example shows `Open` option in the Spreadsheet component.
+The following sample shows the `Open` option by using the [`openUrl`](../api/spreadsheet/#openUrl) property in the Spreadsheet control. You can also use the [`beforeOpen`](../api/spreadsheet/#beforeOpen) event to trigger before opening an Excel file.
 
 {% aspTab template="spreadsheet/open", sourceFiles="opencontroller.cs" %}
 
 {% endaspTab %}
 
+Please find the below table for the beforeOpen event arguments.
+
+ | **Parameter** | **Type** | **Description** |
+| ----- | ----- | ----- |
+| file | FileList or string or File | To get the file stream. `FileList` -  contains length and item index. <br/> `File` - specifies the file lastModified and file name. |
+| cancel | boolean | To prevent the open operation. |
+| requestData | object |  To provide the Form data. |
+
 > * Use `Ctrl + O` keyboard shortcut to open Excel documents.
 > * The default value of the [allowOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowOpen) property is `true`. For demonstration purpose, we have showcased the [allowOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowOpen) property in previous code snippet.
+
+### Open an external URL excel file while initial load
+
+You can achieve to access the remote excel file by using the [`created`](../api/spreadsheet/#created) event. In this event you can fetch the excel file and convert it to a blob. Convert this blob to a file and [`open`](../api/spreadsheet/#open) this file by using Spreadsheet component open method.
+
+{% aspTab template="spreadsheet/open-url", sourceFiles="opencontroller.cs" %}
+
+{% endaspTab %}
 
 ## Save
 
@@ -33,14 +49,35 @@ The Spreadsheet component saves its data, style, format, and more as Excel file 
 
 In user interface, you can save Spreadsheet data as Excel document by clicking `File > Save As` menu item in ribbon.
 
-The following code example shows `Save` option in the Spreadsheet component.
+The following sample shows the `Save` option by using the [`saveUrl`](../api/spreadsheet/#saveUrl) property in the Spreadsheet control. You can also use the [`beforeSave`](../api/spreadsheet/#beforeSave) event to trigger before saving the Spreadsheet as an Excel file.
 
 {% aspTab template="spreadsheet/save", sourceFiles="savecontroller.cs" %}
 
 {% endaspTab %}
 
+Please find the below table for the beforeSave event arguments.
+
+| **Parameter** | **Type** | **Description** |
+| ----- | ----- | ----- |
+| url | string |  Specifies the save url.  |
+| fileName | string | Specifies the file name. |
+| saveType | SaveType | Specifies the saveType like Xlsx, Xls, Csv and Pdf. |
+| customParams | object | Passing the custom parameters from client to server while performing save operation. |
+| isFullPost | boolean | It sends the form data from client to server, when set to true. It fetches the data from client to server and returns the data from server to client, when set to false. |
+| needBlobData | boolean | You can get the blob data if set to true. |
+| cancel | boolean | To prevent the save operations. |
+
 > * Use `Ctrl + S` keyboard shortcut to save the Spreadsheet data as Excel file.
-> * The default value of [allowSave](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowSave) property is `true`. For demonstration purpose, we have showcased the [allowSave](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowSave) property in previous code snippet.
+> * The default value of [allowSave](../api/spreadsheet/#allowsave) property is `true`. For demonstration purpose, we have showcased the [allowSave](../api/spreadsheet/#allowsave) property in previous code snippet.
+> * Demo purpose only, we have used the online web service url link.
+
+### To send and receive custom params from client to server
+
+Passing the custom parameters from client to server by using [`beforeSave`](../api/spreadsheet/#beforeSave) event.
+
+{% aspTab template="spreadsheet/custom-params", sourceFiles="customParamsController.cs" %}
+
+{% endaspTab %}
 
 ### Methods
 
