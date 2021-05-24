@@ -5,6 +5,7 @@
 * [Magnification](pdfviewer/magnification.md)
 * [Text Search](pdfviewer/text_search.md)
 * [Text Markup Annotation](pdfviewer/text-markup-annotation.md)
+* [Shape Annotation](pdfviewer/annotation/shape-annotation.md)
 * [Hand Written Signature](pdfviewer/hand-written-signature.md)
 * [Interaction Mode](pdfviewer/interaction_mode.md)
 * [Print](pdfviewer/print.md)
