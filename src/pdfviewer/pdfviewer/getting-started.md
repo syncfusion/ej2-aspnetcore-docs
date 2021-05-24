@@ -1,18 +1,19 @@
 ---
 title: "Getting Started"
 component: "PDF Viewer"
-description: "Learn how to get started using ASP.NET CORE PDF Viewer component through simple steps."
+description: "This page helps you to learn how to get started using the Syncfusion's ASP.NET Core PDF Viewer component through simple steps."
 ---
 
-# Getting Started with ASP.NET Core
+# Getting Started in ASP.NET Core PDF Viewer control
 
 > Starting with v16.4.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use Syncfusion components.
 
 ## Prerequisites
 
 To get started with ASP.NET Core application, ensure that the following software is installed on the machine.
-* Visual Studio 2017
-* DotNet Core 2.0
+* .NET Core 2.0 or .NET Core 2.1 with Visual Studio 2017
+(or)
+* .NET Core 3.0 or .NET Core 3.1 with Visual Studio 2019
 
 ## Setup ASP.NET Core application with Essential JS 2 for ASP.NET Core
 
