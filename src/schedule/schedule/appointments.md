@@ -473,6 +473,16 @@ To differentiate the appearance of the appointments based on specific criteria s
 
 {% endaspTab %}
 
+## Appointments occupying entire cell
+
+The Scheduler allows the event to occupies the full height of the cell without its header part by setting `true` for `enableMaxHeight` Property.
+
+We can show more indicator if more than one appointment is available in a same cell by setting `true` to `enableIndicator` property whereas its default value is false.
+
+{% aspTab template="schedule/appointments/enable-maxheight", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
 ## Display tooltip for appointments
 
 The tooltip shows the Scheduler appointment's information in a formatted style by making use of the tooltip related options.
