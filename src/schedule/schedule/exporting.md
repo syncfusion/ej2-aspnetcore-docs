@@ -87,3 +87,26 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% aspTab template="schedule/calendar-export/calendar-import", sourceFiles="data.cs"  %}
 
 {% endaspTab %}
+
+## How to print the Scheduler element
+
+The Scheduler allows you to print the Scheduler element by using the `print` client-side method. The print method works in two ways. You can find it below.
+
+* Using print method without options.
+* Using a print method with options.
+
+### Using print method without options
+
+You can print the Schedule element with the current view by using the `print` method without passing the options. The following example shows how to print the Scheduler using the `print` method without passing options.
+
+{% aspTab template="schedule/calendar-export/default-print", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
+### Using a print method with options
+
+You can print the Schedule element based on your needs using the `print` method by passing the print options used in this example with its values. The following example shows how to print the Scheduler using the `print` method by passing the options.
+
+{% aspTab template="schedule/calendar-export/print-options", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
