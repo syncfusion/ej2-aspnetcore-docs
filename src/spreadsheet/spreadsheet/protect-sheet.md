@@ -40,7 +40,7 @@ In the active Spreadsheet, the sheet protection can be done by any of the follow
 * Right-click the sheet tab, select the Protect Sheet item in the context menu, and then select your desired options.
 * Use the [`protectSheet()`](../api/spreadsheet/#protectSheet) method programmatically.
 
-The following code example shows `Protect Sheet` functionality in the Spreadsheet control.
+The following example shows `Protect Sheet` functionality in the Spreadsheet control.
 
 {% aspTab template="spreadsheet/protect-sheet", sourceFiles="protectSheetController.cs" %}
 
@@ -82,13 +82,13 @@ You can use the [`isProtected`](../api/spreadsheet/#isProtected) property to pro
 
 In the active Spreadsheet, you can protect the worksheet by selecting the Data tab in the Ribbon toolbar and choosing the `Protect Workbook` item. Then, enter the password and confirm it and click on OK.
 
-The following code example shows `Protect Workbook` by using the [`isProtected`](../api/spreadsheet/#isProtected) property in the Spreadsheet control.
+The following example shows `Protect Workbook` by using the [`isProtected`](../api/spreadsheet/#isProtected) property in the Spreadsheet control.
 
 {% aspTab template="spreadsheet/protect-workbook", sourceFiles="protectWorkbookController.cs" %}
 
 {% endaspTab %}
 
-The following code example shows `Protect Workbook` by using the [`password`](../api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion in the dialog box.
+The following example shows `Protect Workbook` by using the [`password`](../api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion in the dialog box.
 
 {% aspTab template="spreadsheet/password", sourceFiles="passwordController.cs" %}
 

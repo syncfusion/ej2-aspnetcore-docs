@@ -60,6 +60,14 @@ Paste can be done in one of the following ways.
 
 {% endaspTab %}
 
+## Prevent the paste functionality
+
+The following example shows, how to prevent the paste action in spreadsheet. In [`actionBegin`](../api/spreadsheet/#actionbegin) event, you can set `cancel` argument as false in paste request type.
+
+{% aspTab template="spreadsheet/prevent-paste", sourceFiles="clipboardController.cs" %}
+
+{% endaspTab %}
+
 ## Limitations
 
 * External clipboard is not fully supported while copying data from another source and pasting into a spreadsheet, it only works with basic supports (Values, Number, cell, and Text formatting).
