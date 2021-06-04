@@ -243,7 +243,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
         foreach (var apps in param.deleted)
         {
             ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
-            if (apps != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
+            if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
         }
     }
     db.SubmitChanges();
@@ -323,7 +323,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
         foreach (var apps in param.deleted)
         {
             ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
-            if (apps != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
+            if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
         }
     }
     db.SubmitChanges();
@@ -387,7 +387,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
         foreach (var apps in param.deleted)
         {
             ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
-            if (apps != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
+            if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
         }
     }
     db.SubmitChanges();
@@ -452,7 +452,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
         foreach (var apps in param.deleted)
         {
             ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
-            if (apps != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
+            if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
         }
     }
     db.SubmitChanges();
@@ -506,7 +506,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
         foreach (var apps in param.deleted)
         {
             ScheduleEventData appointment = db.ScheduleEventDatas.Where(c => c.Id == apps.Id).FirstOrDefault();
-            if (apps != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
+            if (appointment != null) db.ScheduleEventDatas.DeleteOnSubmit(appointment);
         }
     }
     db.SubmitChanges();
