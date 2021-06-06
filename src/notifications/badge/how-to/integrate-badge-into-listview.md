@@ -8,3 +8,7 @@ will automatically adjust the size based on the container element.
 {% aspTab template="badge/listview", sourceFiles="HomeController.cs" %}
 
 {% endaspTab %}
+
+Output be like the below.
+
+![Badge Sample](../images/listview.PNG)

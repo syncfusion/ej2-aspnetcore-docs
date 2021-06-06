@@ -6,3 +6,7 @@ update the badges content dynamically. Click the increment button to change the 
 {% aspTab template="badge/dynamic-badge", sourceFiles="HomeController.cs" %}
 
 {% endaspTab %}
+
+Output be like the below.
+
+![Badge Sample](../images/badgecount.PNG)

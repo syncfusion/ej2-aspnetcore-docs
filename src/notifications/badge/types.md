@@ -27,6 +27,10 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 
 {% endaspTab %}
 
+Output be like the below.
+
+![Badge Sample](./images/badgestyles.PNG)
+
 ## Badge types
 
 The types of Essential JS 2 badges are as follows:
@@ -47,6 +51,10 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 
 {% endaspTab %}
 
+Output be like the below.
+
+![Badge Sample](./images/circle.PNG)
+
 ### Pill
 
 The pill badge style can be applied by adding the modifier class `.e-badge-pill` to the target element.
@@ -55,6 +63,10 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 
 {% endaspTab %}
 
+Output be like the below.
+
+![Badge Sample](./images/pill.PNG)
+
 ### Link
 
 When badge modifier classes are applied to the anchor tag, the badge’s appearance will change from normal state to hover state on mouseover.
@@ -62,6 +74,10 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% aspTab template="badge/link", sourceFiles="HomeController.cs" %}
 
 {% endaspTab %}
+
+Output be like the below.
+
+![Badge Sample](./images/link.PNG)
 
 ### Notification
 
@@ -73,6 +89,10 @@ set the parent element to `position: relative`.
 
 {% endaspTab %}
 
+Output be like the below.
+
+![Badge Sample](./images/notification.PNG)
+
 ### Dot
 
 Dot can be applied by adding the modifier class `.e-badge-dot` to the target element. Dot badges are similar to notification badges, but in a minimalistic way. While using the dot badge, set the parent element to `position: relative` .
@@ -80,6 +100,10 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 {% aspTab template="badge/dot", sourceFiles="HomeController.cs" %}
 
 {% endaspTab %}
+
+Output be like the below.
+
+![Badge Sample](./images/dot.PNG)
 
 ### Overlap
 
@@ -90,6 +114,10 @@ by adding the modifier class`.e-badge-overlap`. While using the overlap badge, s
 
 {% endaspTab %}
 
+Output be like the below.
+
+![Badge Sample](./images/overlap.PNG)
+
 ### Position
 
 The default position of the `notification` or `dot` badge is top. But, the position can be changed to `bottom` using
@@ -99,3 +127,7 @@ status in the avatar as shown in the following sample.
 {% aspTab template="badge/position", sourceFiles="HomeController.cs" %}
 
 {% endaspTab %}
+
+Output be like the below.
+
+![Badge Sample](./images/position.PNG)
