@@ -19,4 +19,5 @@
 * [Customize tab scroll step](tab/how-to/customize-tab-scroll-step.md)
 * [Populate Tab items and their content through ViewBag](tab/how-to/populate-tab-items-and-their-content-through-view-bag.md)
 * [Render the Tab items using content template](tab/how-to/render-the-tab-items-using-content-template.md)
+* [Load the content as partial view to Tab](tab/how-to/load-the-content-as-partial-view.md)
 * [Migration from Essential JS 1](tab/ej1-api-migration.md)
