@@ -90,3 +90,17 @@ In below demo, disabled on `showItemCount` property on rendering swimlane row wi
 Output be like the below.
 
 ![kanban](./images/cards-count.PNG)
+
+## Enable frozen rows
+
+Frozen rows provide an option to make the current swimlane row header text always visible on top of the content while scrolling the Kanban content. The swimlane header text will be changed dynamically, when you scroll to another swimlane row.
+
+By default, the `enableFrozenRows` property is set as `false`. If you wish to show the swimlane frozen rows, you can enable the `enableFrozenRows` property.
+
+> This feature support only when using Kanban content scrolling.
+
+{% aspTab template="kanban/swimlane/frozen-rows", sourceFiles="controller.cs,datasource.cs" %}
+
+{% endaspTab %}
+
+![kanban](./images/frozen-rows.PNG)
