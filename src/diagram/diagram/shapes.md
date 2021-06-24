@@ -36,6 +36,14 @@ The following code illustrates how an image node is created.
 
 {% endaspTab %}
 
+**Base64 Encoded Image Into The Image Node:**
+
+The following code illustrates how add Base64 image into image node.
+
+{% aspTab template="diagram/shapes/imagebase64", sourceFiles="imagebase64.cs" %}
+
+{% endaspTab %}
+
 >Note: Deploy your HTML file in the web application and export the diagram (image node) or else the image node will not be exported in the Chrome and Firefox due to security issues. Refer to the following link.
 
 Link 1: `http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/`
