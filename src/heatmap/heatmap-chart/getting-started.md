@@ -40,7 +40,7 @@ After Installation complete this will included in the project. You can refer it 
 @addTagHelper *, Syncfusion.EJ2
 ```
 
-**Step 4:** Add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
+**Step 4:** Add client side resource through [`CDN`](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/client-side-resource/) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
 
 ```cs
 @* Syncfusion Essential JS 2 Styles *@
