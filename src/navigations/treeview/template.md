@@ -18,7 +18,7 @@ The template expression should be provided inside the `${...}` interpolation syn
 
 Output be like the below.
 
-![TreeView Sample](./image/template.PNG)
+![TreeView Sample](./images/template.PNG)
 
 ## See Also
 

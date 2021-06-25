@@ -21,7 +21,7 @@ In the following example, the `allowMultiSelection` property is enabled.
 
 Output be like the below.
 
-![TreeView Sample](./image/multiselect.PNG)
+![TreeView Sample](./images/multiselect.PNG)
 
 ## Selected nodes
 

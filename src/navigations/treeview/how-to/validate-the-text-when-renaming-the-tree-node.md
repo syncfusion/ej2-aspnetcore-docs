@@ -8,4 +8,4 @@ You can validate the tree node text while editing using `nodeEdited` event of th
 
 Output be like the below.
 
-![TreeView Sample](../image/renaming-tree.PNG)
+![TreeView Sample](../images/renaming-tree.PNG)

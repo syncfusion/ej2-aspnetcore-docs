@@ -18,7 +18,7 @@ The following table explains the usage of indicator icons.
 | Minus or restrict icon |Indicates that the dragged node is not to be dropped at the hovered region. |
 | In between icon | Indicates that the dragged node is to be added as siblings of hovered region. |
 
-* If you need to prevent dragging action for a particular node, the [`nodeDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeDragStart.html) event can be used which is triggered when the node drag is started. If you need to prevent dropping action for a particular node, the [`nodeDragStop`](https://help.syncfusion.com/cr/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeDragStop.html) event can be used which is triggered when the drag is stopped.
+* If you need to prevent dragging action for a particular node, the [`nodeDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeDragStart.html) event can be used which is triggered when the node drag is started. If you need to prevent dropping action for a particular node, the [`nodeDragStop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeDragStop) event can be used which is triggered when the drag is stopped.
 
 * The [`nodeDragging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeDragging.html) event is triggered when the TreeView node is being dragged. You can customize the cloned element in this event.
 
@@ -32,7 +32,7 @@ In the following sample, the [allowDragAndDrop](https://help.syncfusion.com/cr/a
 
 Output be like the below.
 
-![TreeView Sample](./image/dragdrop.PNG)
+![TreeView Sample](./images/dragdrop.PNG)
 
 ## Multiple-node drag and drop
 
@@ -48,7 +48,7 @@ In the following sample,  the `allowMultiSelection` property is  enabled along w
 
 Output be like the below.
 
-![TreeView Sample](./image/multidrag.PNG)
+![TreeView Sample](./images/multidrag.PNG)
 
 ## See Also
 

@@ -8,4 +8,4 @@ You can check and uncheck the checkboxes of tree view by clicking the tree node 
 
 Output be like the below.
 
-![TreeView Sample](../image/node-check.PNG)
+![TreeView Sample](../images/node-check.PNG)

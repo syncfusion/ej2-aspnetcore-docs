@@ -8,4 +8,4 @@ You can customize the tree nodes level wise by adding custom cssClass to the con
 
 Output be like the below.
 
-![TreeView Sample](../image/nodecustomize.PNG)
+![TreeView Sample](../images/nodecustomize.PNG)

@@ -10,4 +10,4 @@ Following is an example which demonstrates the above cases which are used to man
 
 Output be like the below.
 
-![TreeView Sample](../image/contextmenu.PNG)
+![TreeView Sample](../images/contextmenu.PNG)

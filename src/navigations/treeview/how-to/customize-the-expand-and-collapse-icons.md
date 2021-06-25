@@ -9,4 +9,4 @@ Refer to the sample to customize expand/collapse icons.
 
 Output be like the below.
 
-![TreeView Sample](../image/customise.PNG)
+![TreeView Sample](../images/customise.PNG)

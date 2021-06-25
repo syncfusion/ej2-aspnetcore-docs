@@ -23,7 +23,7 @@ In the following example, the first level node’s text cannot be changed, but a
 
 Output be like the below.
 
-![TreeView Sample](./image/node-editing.PNG)
+![TreeView Sample](./images/node-editing.PNG)
 
 ## See Also
 

@@ -8,4 +8,4 @@ You can able to restrict to drag and drop files under folder only. These can be 
 
 Output be like the below.
 
-![TreeView Sample](../image/node-drag.PNG)
+![TreeView Sample](../images/node-drag.PNG)

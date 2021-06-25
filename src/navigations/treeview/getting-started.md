@@ -28,4 +28,4 @@ TreeView can load data either from local data sources or remote data services. T
 
 Output be like the below.
 
-![TreeView Sample](./image/binding-self.PNG)
+![TreeView Sample](./images/binding-self.PNG)

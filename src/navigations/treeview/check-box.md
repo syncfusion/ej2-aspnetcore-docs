@@ -28,7 +28,7 @@ In the following example, the `showCheckBox` property is enabled.
 
 Output be like the below.
 
-![TreeView Sample](./image/checkbox.PNG)
+![TreeView Sample](./images/checkbox.PNG)
 
 ## Checked nodes
 
