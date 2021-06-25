@@ -6,65 +6,74 @@ You can explore some useful features in the Maps component using the following v
 
 ## Prerequisites
 
-To get start with ASP.NET Core application, need to ensure the following software to be installed on the machine.
+To get started with an ASP.NET Core application, make sure you have the following software installed on your computer.
 
 * Visual Studio 2017
-* DotNet Core 2.0
+* .NET Core 2.0 and above
 
 ## Setup ASP.NET Core application with Essential JS 2 for ASP.NET Core
 
-The following steps to create ASP.NET Core Application.
+The steps to create an ASP.NET Core application are as follows.
 
-**Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
+**Step 1:** Click **Create new project** in the **Start page** of Visual Studio 2017, and the popup window below will appear. Click the **OK** button after selecting the **ASP.NET Core Web Application** template. You can also change the name of the project.
 
-![Alt text](./images/default-template.png)
+![Core template](../images/core-template.PNG)
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+**Step 2:** Following the above steps, the popup window below will appear. Select **Web Application(Model View Controller)** in this window. Now the project will be created successfully.
 
-Open the `nuGet` package manager.
+![Default template](../images/default-template.png)
 
-![Alt text](./images/solution-Explorer.png)
+**Step 3:** After you have created your project, use **NuGet Package Manager** to install the **Syncfusion.EJ2.AspNet.Core** package.
 
-Install the **Syncfusion.EJ2** package to the application
+Open the **Manage NuGet packages**.
 
-![Alt text](./images/nuget-demo.png)
+![Solution explorer](../images/solution-Explorer.png)
 
-After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
+The **Syncfusion.EJ2.AspNet.Core** package should be installed in the application.
 
-> We need to install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
+![Nuget demo](../images/nuget-demo1.PNG)
 
-**Step 3:** Open the **_ViewImports.cshtml** to import Syncfusion.EJ2 package.
+This package will be included in the project automatically once the installation is complete.
+
+> Since the **NewtonSoft.JSON** package is required by **Syncfusion.EJ2.AspNet.Core**, we must install **NewtonSoft.JSON** as a dependency.
+
+**Step 4:** To import the **Syncfusion.EJ2** package, go to the **Views** folder and open the **_ViewImports.cshtml** file.
 
 ```cs
 @addTagHelper *, Syncfusion.EJ2
 ```
 
-**Step 4:** Add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
+**Step 4:** Add client-side resource through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or local [package](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml** which is located in the **Views/Shared** folder. Within the **head** tag, add the script reference like below.
 
 ```cs
 @* Syncfusion Essential JS 2 Scripts *@
 <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
 ```
 
-**Step 5:** Adding Script Manager in layout page **_Layout.cshtml.**
+**Step 5:** Script manager should be added to the **_Layout.cshtml** layout page within the **body** tag, which is located in the **Views/Shared** folder.
 
 ```cs
-<ejs-scripts></ejs-scripts>
+<body>
+    ....
+    ....
+    <!-- Syncfusion Essential JS 2 ScriptManager -->
+    <ejs-scripts></ejs-scripts>
+</body>
 ```
 
-**Step 6:** Add the below code to your Index.cshtml view page which is present under Views/Home folder, to initialize the maps.
+**Step 6:** To initialize the Maps, add the following code to your **Index.cshtml** view page, which is located in the **Views/Home** folder.
 
 ```html
 
-@using Syncfusion.EJ2;
- <ejs-maps id="maps">
+@using Syncfusion.EJ2.Maps;
+<ejs-maps id="maps">
 </ejs-maps>
 
 ```
 
 ## Render shapes from GeoJSON data
 
-This section explains how to bind GeoJSON data to the map.
+This section explains how to bind GeoJSON data to the Maps.
 
 ```cs
 
@@ -81,7 +90,7 @@ public object GetUSMap()
 
 ```
 
-Elements in the maps will be rendered in the layers. So, add a layer collection to the maps by using the[`layers`]property. Now bind the GeoJSON data to the [`shapeData`] property.
+Elements in the Maps will be rendered in the layers. So, add a layer to the Maps by using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Now bind the GeoJSON data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
 
 ```html
 
@@ -95,24 +104,68 @@ Elements in the maps will be rendered in the layers. So, add a layer collection 
 
 ```
 
+> Note: Only if [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided, map layers will render.
+
 ## Bind data source to map
 
-The following properties in layers are used for binding data source to map.
+The following properties in layers are used for binding the data source to the map.
 
-* [`dataSource`]
-* [`shapeDataPath`]
-* [`shapePropertyPath`]
+* [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource)
+* [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath)
+* [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath)
 
-The [`dataSource`] property takes collection value as input. For example, a list of objects can be provided as input. This data is further used in tooltip, data label, bubble, legend and color mapping.
+The [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource) property takes set of key/value pair as input. For example, a list of objects can be provided as input. This data is further used in a tooltip, data label, legend and color mapping.
 
-The [`shapeDataPath`] property is used to reference the data ID in dataSource. Whereas, the [`shapePropertyPath`] property is used to reference the column name in shapeData to identify the shape. Both properties are related to each other. When the values of the shapeDataPath property in the dataSource property and the value of shapePropertyPath in the shapeData property match, then the associated object from the dataSource is bound to the corresponding shape.
+The [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath) property is used to reference the key in dataSource. Whereas, the [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath) property is used to reference the column name in [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) to identify the shape. Both properties are related to each other. When the values of the [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath) property in the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource) property and the value of [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath) in the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property match, then the associated object from the data source is bound to the corresponding shape.
 
-The JSON object "electionData" is used as data source as follows.
+The JSON object **"electionData.json"** is used as data source in the below code.
+
+```html
+[
+    { Country: 'China', Membership: 'Permanent' },
+    { Country: 'France', Membership: 'Permanent' },
+    { Country: 'Russia', Membership: 'Permanent' },
+    { Country: 'United Kingdom', Membership: 'Permanent' },
+    { Country: 'United States', Membership: 'Permanent' },
+    { Country: 'Bolivia', Membership: 'Non-Permanent' },
+    { Country: 'Eq. Guinea', Membership: 'Non-Permanent' },
+    { Country: 'Ethiopia', Membership: 'Non-Permanent' },
+    { Country: "Côte d'Ivoire", Membership: 'Permanent' },
+    { Country: 'Kazakhstan', Membership: 'Non-Permanent' },
+    { Country: 'Kuwait', Membership: 'Non-Permanent' },
+    { Country: 'Netherlands', Membership: 'Non-Permanent' },
+    { Country: 'Peru', Membership: 'Non-Permanent' },
+    { Country: 'Poland', Membership: 'Non-Permanent' },
+    { Country: 'Sweden', Membership: 'Non-Permanent' },
+];
+
+```
+
+```cs
+
+public IActionResult Default()
+{
+    ViewBag.usmap = GetUSMap();
+    ViewBag.electiondata = GetData();
+    return View();
+}
+public object GetUSMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+public object GetData()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/electionData.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
 
 ```html
 
 @using Syncfusion.EJ2;
- <ejs-maps id="maps" load="window.onMapLoad" shapeSelected="window.shapeSelected">
+ <ejs-maps id="maps">
     <e-maps-layers>
         <e-maps-layer dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name">
         </e-maps-layer>
@@ -123,49 +176,90 @@ The JSON object "electionData" is used as data source as follows.
 
 ## Apply color mapping
 
-The color mapping feature supports customization of shape colors based on the underlying value of shape received from the bound data. Specify the field name from which the values have to be compared for the shapes in the [`colorValuePath`] property in [`shapeSettings`].
+The color mapping feature supports customization of shape colors based on the underlying value of shape received from the bound data. To apply the color to the shapes, specify the field name from the datasource to the  [`ColorValuePath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsShapeSettings.html#Syncfusion_EJ2_Maps_MapsShapeSettings_ColorValuePath) property of [`MapsShapeSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsShapeSettings.html) class.
 
-Specify the color and value in the [`colorMapping`] property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
+Specify the color and value in the [`MapsColorMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsColorMapping.html) property. Here **"#D84444"** is specified for **Permanent** countries and **"#316DB5"** is specified for **Non-Permanent** countries.
+
+```cs
+
+public IActionResult Default()
+{
+    ViewBag.worldmap = GetWorldMap();
+    ViewBag.electiondata = GetData();
+    return View();
+}
+public object GetWorldMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/WorldMap.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+public object GetData()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/electionData.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
 
 ```html
 
-@using Syncfusion.EJ2;
-var shape = new
-{
-    colorValuePath = "Candidate",
-    colorMapping = new[] {
-        new { value = "Trump", color = "#D84444" },
-        new { value = "Clinton", color = "#316DB5" }
-    }
-};
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var propertyPath = new[] { "name" };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new  MapsColorMapping{ Color = "#EDB46F", Value= "Permanent"  },
+        new MapsColorMapping { Color= "#F1931B", Value = "Non-Permanent" }
+    };
+}
+
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name">
+        <e-maps-layer dataSource="ViewBag.electiondata" shapeData="ViewBag.worldmap" shapeDataPath="Country" shapePropertyPath="propertyPath">
+            <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
 
 ```
 
-## Add title to maps
+> Note: Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
 
-You can add a title using the [`titleSettings`] property to the map to provide information to the user about the shapes rendered in the map.
+## Add title to Maps
+
+The title can be added to the Maps using the [`MapsTitleSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTitleSettings.html) class to provide information to the user about the shapes rendered in the Maps.
+
+```cs
+
+public IActionResult Default()
+{
+    ViewBag.usmap = GetUSMap();
+    return View();
+}
+public object GetUSMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
 
 ```html
 
-@using Syncfusion.EJ2;
-var shape = new
-{
-    colorValuePath = "Candidate",
-    colorMapping = new[] {
-        new { value = "Trump", color = "#D84444" },
-        new { value = "Clinton", color = "#316DB5" }
-    }
-};
+@using Syncfusion.EJ2.Maps;
+@{
+    var titleStyle = new MapsFont
+    {
+        Size = "10px",
+        Color = "red",
+        FontFamily = "Sans-serif"
+    };
+}
+
 <ejs-maps id="maps">
-    <e-maps-titlesettings text="USA Election Results - 2016" textStyle="titleStyle"></e-maps-titlesettings>
+    <e-maps-titlesettings text="Maps component" textStyle="titleStyle"></e-maps-titlesettings>
     <e-maps-layers>
-        <e-maps-layer shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name">
+        <e-maps-layer shapeData="ViewBag.usmap">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
@@ -174,57 +268,81 @@ var shape = new
 
 ## Enable legend
 
-You can enable the legend for the maps by setting the [`visible`]
-property to true in [`legendSettings`] object.
+Legend can be added to the Maps to summarize the data bound to the map. To enable legend for the Maps, set the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [`MapsLegendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html) class to **true**.
+
+```cs
+
+public IActionResult Default()
+{
+    ViewBag.worldmap = GetWorldMap();
+    ViewBag.electiondata = GetData();
+    return View();
+}
+public object GetWorldMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/WorldMap.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+public object GetData()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/electionData.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
 
 ```html
 
-@using Syncfusion.EJ2;
-var shape = new
-{
-    colorValuePath = "Candidate",
-    colorMapping = new[] {
-        new { value = "Trump", color = "#D84444" },
-        new { value = "Clinton", color = "#316DB5" }
-    }
-};
+@using Syncfusion.EJ2.Maps;
+@{
+    var propertyPath = new[] { "name" };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new  MapsColorMapping{ Color = "#EDB46F",Value= "Permanent"  },
+        new MapsColorMapping { Color= "#F1931B", Value = "Non-Permanent" }
+    };
+}
+
 <ejs-maps id="maps">
-    <e-maps-titlesettings text="USA Election Results - 2016" textStyle="titleStyle"></e-maps-titlesettings>
     <e-maps-legendsettings visible="true" position="Top"></e-maps-legendsettings>
     <e-maps-layers>
-        <e-maps-layer shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name">
+        <e-maps-layer dataSource="ViewBag.electiondata" shapeData="ViewBag.worldmap" shapeDataPath="Country" shapePropertyPath="propertyPath">
+            <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
 
 ```
 
+> Note: Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
+
 ## Add data label
 
-You can add data labels to show additional information of the shapes in map. This can be achieved by setting the [`visible`] property to true in the [`dataLabelSettings`] object.
+The data labels can be added to the Maps to show additional information of the shapes in the Maps. This can be achieved by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Visible) property to **true** in the [`MapsDataLabelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html) class.
+
+```cs
+
+public IActionResult Default()
+{
+    ViewBag.usmap = GetUSMap();
+    return View();
+}
+public object GetUSMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
 
 ```html
 
-@using Syncfusion.EJ2;
-var shape = new
-{
-    colorValuePath = "Candidate",
-    colorMapping = new[] {
-        new { value = "Trump", color = "#D84444" },
-        new { value = "Clinton", color = "#316DB5" }
-    }
-};
-var dataLabelSettings = new
-{
-        visible = true,
-        labelPath = "name",
-        smartLabelMode = "Trim"
-};
+@using Syncfusion.EJ2.Maps;
+
 <ejs-maps id="maps">
-    <e-maps-titlesettings text="USA Election Results - 2016" textStyle="titleStyle"></e-maps-titlesettings>
     <e-maps-layers>
-        <e-maps-layer dataLabelSettings="dataLabelSettings" shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap"
-            shapeDataPath="State" shapePropertyPath="name">
+        <e-maps-layer shapeData="ViewBag.usmap">
+            <e-layersettings-datalabelsettings visible="true" labelPath="name" smartLabelMode="@Syncfusion.EJ2.Maps.SmartLabelMode.Trim"></e-layersettings-datalabelsettings>
+            <e-layersettings-shapesettings autofill="true"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
@@ -233,20 +351,34 @@ var dataLabelSettings = new
 
 ## Enable tooltip
 
-The tooltip is used when you cannot display the information by using the data labels due to space constraints.
-You can enable tooltip by setting the [`visible`] property to true
-in [`tooltipSettings`] object.
+When the data labels can't display the information due to space constraints, the tooltip is used. The tooltip can be enabled by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html#Syncfusion_EJ2_Maps_MapsTooltipSettings_Visible) property of the [`MapsTooltipSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html) class to **true**.
+
+```cs
+
+public IActionResult Default()
+{
+    ViewBag.usmap = GetUSMap();
+    return View();
+}
+public object GetUSMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
 
 ```html
 
-@using Syncfusion.EJ2;
-<ejs-maps id="maps" load="window.onMapLoad" shapeSelected="window.shapeSelected">
-    <e-maps-titlesettings text="USA Election Results - 2016" textStyle="titleStyle"></e-maps-titlesettings>
-    <e-maps-zoomsettings enable="false"></e-maps-zoomsettings>
-    <e-maps-legendsettings visible="true" mode="Interactive" position="Top" width="80%" textStyle="textStyle"></e-maps-legendsettings>
+@using Syncfusion.EJ2.Maps;
+
+<ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name"
-            tooltipSettings="tooltipSettings" highlightSettings="highlightSettings" selectionSettings="selectionSettings">
+        <e-maps-layer shapeData="ViewBag.usmap">
+            <e-layersettings-datalabelsettings visible="true" labelPath="name" smartLabelMode="@Syncfusion.EJ2.Maps.SmartLabelMode.Trim">
+            </e-layersettings-datalabelsettings>
+            <e-layersettings-tooltipsettings visible="true" valuePath="name"></e-layersettings-tooltipsettings>
+            <e-layersettings-shapesettings autofill="true"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
