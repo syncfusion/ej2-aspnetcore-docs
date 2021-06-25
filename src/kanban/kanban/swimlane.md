@@ -103,4 +103,4 @@ By default, the `enableFrozenRows` property is set as `false`. If you wish to sh
 
 {% endaspTab %}
 
-![kanban](./images/frozen-rows.PNG)
+![kanban](./images/frozen-rows.png)
