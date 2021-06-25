@@ -71,6 +71,8 @@ The following table lists the available tools on the toolbar.
 | FullScreen | Stretches the editor to the maximum width and height of the browser window.|toolbarSettings: { items: ['FullScreen']}|
 | SourceCode | Rich Text Editor includes the ability for users to directly edit HTML code via “Source View”. If you made any modification in Source view directly, synchronize with Design view.|toolbarSettings: { items: ['SourceCode']}|
 | Table | Creates a table to a specific location in the content |toolbarSettings: { items: ['CreateTable']}|
+| NumberFormatList | Allows to create list items with various list style types(numbered)|toolbarSettings: { items: ['NumberFormatList']}|
+| BulletFormatList | Allows to create list items with various list style types(bulleted)|toolbarSettings: { items: ['BulletFormatList']}|
 
 By default, tool will be arranged in following order.
 

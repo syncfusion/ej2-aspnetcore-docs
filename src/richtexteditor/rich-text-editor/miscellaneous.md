@@ -114,3 +114,11 @@ To have a restricted resizable area for the Rich Text Editor, you need to specif
 {% aspTab template="rich-text-editor/max-resizable", sourceFiles="controller.cs" %}
 
 {% endaspTab %}
+
+## Number and Bullet Format Lists
+
+This feature allows the user to change the appearance of the Numbered and Bulleted lists. Users can also apply different numbering or bullet formats lists such as lowercase greek, upper Alpha, square and circles. You can also customize the style type of the lists to be populated in the dropdown from the toolbar by using the `numberFormatList` and `bulletFormatList` properties in the Rich Text Editor.
+
+{% aspTab template="rich-text-editor/format-lists", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
