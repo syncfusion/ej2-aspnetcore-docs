@@ -24,6 +24,16 @@ Apart from the default date navigation and view options available on the header 
 
 {% endaspTab %}
 
+## How to display the view options within the header bar popup
+
+By default, the header bar holds the view navigation options, through which the user can switch between various views. You can move this view options to the header bar popup by setting `true` to the `enableAdaptiveUI` property.
+
+{% aspTab template="schedule/header-bar/adaptive-ui", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
+> Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
+
 ## Date header customization
 
 The Scheduler UI that displays the date text on all views are considered as the date header cells. You can customize the date header cells of Scheduler either using `dateHeaderTemplate` or `renderCell` event.

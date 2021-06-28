@@ -251,3 +251,17 @@ Although the Scheduler views are designed keeping in mind the responsiveness of 
 With this compact view enabled on mobile, you can view only single resource at a time and to switch to other resources, there is a TreeView at the left listing out all other available resources - clicking on which will display that particular resource and its related appointments.
 
 ![Resources in compact mode](../../schedule/images/resource.png)
+
+## Adaptive UI in desktop
+
+By default, the Scheduler layout adapts automatically in the desktop and mobile devices with appropriate UI changes. In case, if the user wants to display the Adaptive scheduler in desktop mode with adaptive enhancements, then the property `enableAdaptiveUI` can be set to true. Enabling this option will display the exact mobile mode of Scheduler view on desktop devices.
+
+Some of the default changes made for compact Scheduler to render in desktop devices are as follows,
+* View options displayed in the Navigation drawer.
+* Plus icon is added to the header for new event creation.
+* Today icon is added to the header instead of the Today button.
+* With Multiple resources – only one resource has been shown to enhance the view experience of resource events details clearly. To switch to other resources, there is a TreeView on the left that lists all other available resources, clicking on which will display that particular resource and its related events.
+
+{% aspTab template="schedule/resources/adaptive-ui", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
