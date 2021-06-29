@@ -176,3 +176,13 @@ To Export the Grid in server side, You need to call the
 {% endaspTab %}
 
 > **Note:** Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
+
+### CSV Export in server
+
+You can export the Grid to CSV format by using the [`serverCsvExport`](https://ej2.syncfusion.com/documentation/api/grid/#servercsvexport) method which will pass the Grid properties to server.
+
+In the below demo, we have invoked the above method inside the [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/grid/#toolbarclick) event. In server side, we have deserialized the Grid properties and passed to the `CsvExport` method which will export the properties to CSV format.
+
+{% aspTab template="grid/excel-export/server-csv-export", sourceFiles="server-exportCore.cs" %}
+
+{% endaspTab %}
