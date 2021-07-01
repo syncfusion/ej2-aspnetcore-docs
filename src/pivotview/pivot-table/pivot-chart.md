@@ -267,6 +267,14 @@ In the following sample, title of y-axis and x-axis are customized.
 
 ![output](images/axis-customization.png)
 
+One can also customize multi-level labels of primary x-axis by using the `multiLevelLabelRender` event in the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html), which fires on rendering each multi-level label in the pivot chart. It has the following parameters:
+
+{% aspTab template="pivot-table/pivot-chart/chart-multiLevelLabelRender", sourceFiles="chart-multiLevelLabelRender.cs" %}
+
+{% endaspTab %}
+
+![output](images/multilevellabelrender.png)
+
 ## Legend Customization
 
 User can customize legend using [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsLegendSettings.html) in [`ChartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) tag. By default, legend will be visible and it can be hidden by setting the property [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsLegendSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotChartSettingsLegendSettings_Visible) in [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotChartSettingsLegendSettings.html) tag as **false**.

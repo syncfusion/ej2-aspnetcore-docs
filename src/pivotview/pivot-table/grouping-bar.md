@@ -12,6 +12,7 @@ Similar to Field List, Grouping Bar UI also comes with basic interactions like,
 
 * Re-arranging fields through drag-and-drop operation between row, column, value and filter axes.
 * Remove fields from the existing report using remove icon.
+* Add fields to the report using fields panel option.
 * Filtering members of specific fields using filter icon.
 * Sorting members of specific fields using sort icon.
 
@@ -22,6 +23,16 @@ Similar to Field List, Grouping Bar UI also comes with basic interactions like,
 {% endaspTab %}
 
 ![output](images/gs_groupingbar.png)
+
+## Show or hide fields panel
+
+The fields panel, which is positioned above the grouping bar, displays the fields that are available in the data source but are not bound in the report. The fields can be dragged and dropped into the appropriate axis. In addition, any field removed from any axes will be automatically added to the fields panel. The fields panel can be displayed by setting the [`showFieldsPanel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings.html#Syncfusion_EJ2_PivotView_PivotViewGroupingBarSettings_ShowFieldsPanel) property in the [`e-groupingBarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings.html) to **true**.
+
+{% aspTab template="pivot-table/grouping-bar/showFieldsPanel", sourceFiles="showFieldsPanel.cs" %}
+
+{% endaspTab %}
+
+![output](images/showfieldspanel.png)
 
 ## Show or hide all filter icon
 
@@ -226,6 +237,8 @@ The event [`aggregateMenuOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 * [`aggregateTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateTypes): It holds the aggregation types set for a field.
 
+* `displayMenuCount`: It allows to set the menu count to be displayed initially. By default, its count is 7.
+
 * `cancel`: It is a boolean property and by setting this to true, dropdown menu won’t be displayed.
 
 In the below sample, the aggregate types of the field "Amount" has been customized in it's dropdown menu.
@@ -233,6 +246,8 @@ In the below sample, the aggregate types of the field "Amount" has been customiz
 {% aspTab template="pivot-table/grouping-bar/aggregation-menu-open", sourceFiles="aggregation-menu-open.cs" %}
 
 {% endaspTab %}
+
+![output](images/aggregatemenuopen.png)
 
  >The events [`aggregateMenuOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateMenuOpen), [`fieldRemove`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldRemove), [`fieldDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldDrop), [`fieldDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldDragStart) and [`onFieldDropped`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_OnFieldDropped) are applicable for both grouping bar and field list.
 
