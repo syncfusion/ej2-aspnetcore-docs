@@ -101,6 +101,16 @@ as `RangeArea`.
 
 {% endaspTab %}
 
+**Spline Range Area**
+
+The Spline Range Area Chart is used to display continuous data points as a set of splines that vary between high and low values over intervals of time and across different categories.
+
+To render a spline range area series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesType.html) as `SplineRangeArea`.
+
+{% aspTab template="chart/series/area-charts/splinerangearea", sourceFiles="splinerangearea.cs" %}
+
+{% endaspTab %}
+
 **Stacked Area**
 
 To render a stacked area series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `StackingArea`.
