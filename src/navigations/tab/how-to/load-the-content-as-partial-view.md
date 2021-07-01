@@ -16,6 +16,6 @@ In the below demo, we have explained on how to create the Tab items dynamically 
 
 Output be like the below.
 
-![Alt text](../images/grid1.PNG)
+![Alt text](../images/grid1.png)
 
-![Alt text](../images/grid2.PNG)
+![Alt text](../images/grid2.png)
