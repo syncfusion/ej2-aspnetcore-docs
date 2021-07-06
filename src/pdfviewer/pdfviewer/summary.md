@@ -16,3 +16,5 @@
 * [Toolbar Customization](pdfviewer/how-to/toolbar_customization.md)
 * [Export as Image](pdfviewer/how-to/export-as-image.md)
 * [Extract Text](pdfviewer/how-to/extract-text.md)
+* [Save original document at the server side](pdfviewer/how-to/save-original-document-at-the-server-side.md)
+* [Delete a specific annotation](pdfviewer/how-to/delete-a-specific-annotation.md)
