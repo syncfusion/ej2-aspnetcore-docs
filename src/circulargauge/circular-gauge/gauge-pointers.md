@@ -35,7 +35,7 @@ Cap and tails can be customized by using [`cap`](https://help.syncfusion.com/cr/
 
 The appearance of the needle pointer can be customized by using [`NeedleStartWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html#Syncfusion_EJ2_CircularGauge_CircularGaugePointer_NeedleStartWidth) and [`NeedleEndWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html#Syncfusion_EJ2_CircularGauge_CircularGaugePointer_NeedleEndWidth).
 
-{% aspTab template="circulargauge/gauge-pointers/customization", sourceFiles="customization.cs" %}
+{% aspTab template="circulargauge/gauge-pointers/needle-customization", sourceFiles="needle-customization.cs" %}
 
 {% endaspTab %}
 

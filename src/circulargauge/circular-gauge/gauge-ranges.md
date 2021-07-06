@@ -49,7 +49,7 @@ For example, when the radius is ‘50%’, range renders to half of the axis rad
 
 The ranges can be dragged over the axis line by clicking and dragging the same. To enable or disable the range drag, use the [`EnableRangeDrag`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_EnableRangeDrag) property.
 
-{% aspTab template="circulargauge/gauge-pointers/dragging-range", sourceFiles="dragging-range.cs" %}
+{% aspTab template="circulargauge/gauge-ranges/dragging-range", sourceFiles="dragging-range.cs" %}
 
 {% endaspTab %}
 
