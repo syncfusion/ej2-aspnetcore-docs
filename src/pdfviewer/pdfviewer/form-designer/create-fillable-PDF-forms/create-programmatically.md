@@ -144,3 +144,27 @@ You can invoke print action using the following code snippet.,
 We can open the already saved PDF document contains Form Fields in it by clicking the open icon in the toolbar. Refer the below GIF for further reference.
 
 ![Alt text](../../../../pdfviewer/images/openexistingpdf.gif)
+
+## Validate form fields
+
+The form fields in the PDF Document will be validated when the `enableFormFieldsValidation` is set to true and hook the validateFormFields. The validateFormFields will be triggered when the PDF document is downloaded or printed with the non-filled form fields. The non-filled fields will be obtained in the `nonFillableFields` property of the event arguments of validateFormFields.
+
+Add the following code snippet to validate the form fields,
+
+```html
+<div style="width:100%;height:600px">
+        <ejs-pdfviewer id="pdfviewer"
+                style="height:600px"
+                serviceUrl="/api/PdfViewer"
+                documentPath=@ViewBag.DocumentPath
+                EnableFormFieldsValidation = true
+                ValidateFormFields="validateFormFields">
+        </ejs-pdfviewer>
+    </div>
+<script>
+function validateFormFields(args) {
+var nonfilledFormFields = args.nonFillableFields;
+}
+</script>
+
+```
