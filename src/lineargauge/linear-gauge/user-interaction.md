@@ -1,49 +1,81 @@
-# User Interaction
+---
+title: " User Interactions in ASP.NET Core Linear Gauge component | Syncfusion "
+
+component: "Linear Gauge"
+
+description: "Learn here all about the User Interactions feature of Syncfusion ASP.NET Core Linear Gauge component and more."
+---
+
+# User Interaction in ASP.NET Core Linear Gauge
 
 ## Tooltip
 
 <!-- markdownlint-disable MD036 -->
 
-Linear gauge will display the details about the pointer value through [tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html), when the mouse is moved over the pointer. By default, tooltip will not be visible and you can enable the tooltip by setting [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Enable) property to true.
+Linear Gauge displays the details about a pointer value through [`e-lineargauge-tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html), when the mouse hovers over the pointer. To enable the tooltip, set [`Enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Enable) property as "**true**".
 
-{% aspTab template="lineargauge/user-interactions/tooltip", sourceFiles="tooltip.cs" %}
+{% aspTab template="lineargauge/user-interactions/tooltip", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with tooltip for pointer value](../images/tooltip.png)
 
 <!-- markdownlint-disable MD013 -->
 
-**Format the Tooltip**
+### Tooltip format
 
 <!-- markdownlint-disable MD013 -->
 
-By default, tooltip will show the pointer value only. In addition to that, you can show more information in tooltip. For example, the format `${value}` shows pointer value with currency symbol.
+Tooltip in the Linear Gauge control can be formatted using the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Format) property in [`e-lineargauge-tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html). It is used to render the tooltip in certain format or to add a user-defined unit in the tooltip. By default, the tooltip shows the pointer value only. In addition to that, more information can be added in the tooltip. For example, the format "**{value}km**" shows pointer value with kilometer unit in the tooltip.
 
-{% aspTab template="lineargauge/user-interactions/tooltip-format", sourceFiles="tooltip-format.cs" %}
-
-{% endaspTab %}
-
-**Tooltip Template**
-
-Any HTML elements can be displayed in the tooltip by using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Template) property of the tooltip. You can use the {value} as placeholders in the HTML element to display the pointer values of the corresponding axis.
-
-{% aspTab template="lineargauge/user-interactions/tooltip-template", sourceFiles="tooltip-template.cs" %}
+{% aspTab template="lineargauge/user-interactions/tooltip-format", sourceFiles="" %}
 
 {% endaspTab %}
 
-**Customize the Appearance of Tooltip**
+![Linear Gauge with tooltip format for pointer value](../images/tooltip-formats.png)
 
-* [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Fill) - Specifies fill color for tooltip
-* [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Border) - Specifies tooltip border width and color
-* [`textStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_TextStyle) - Specifies the tooltip text style, such as color, font family, font style and font weight
+### Tooltip Template
 
-{% aspTab template="lineargauge/user-interactions/tooltip-appearance", sourceFiles="tooltip-appearance.cs" %}
+The HTML element can be rendered in the tooltip of the Linear Gauge using the [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Template) property in [`e-lineargauge-tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html). The "**${value}**" can be used as placeholders in the HTML element to display the pointer values of the corresponding axis.
+
+{% aspTab template="lineargauge/user-interactions/tooltip-template", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with tooltip template for pointer value](../images/tooltip-template1.png)
+
+### Customize the appearance of the tooltip
+
+The tooltip can be customized using the following properties in [`e-lineargauge-tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html).
+
+* [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Fill) - To fill the color for tooltip.
+* [`EnableAnimtion`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_EnableAnimation) - To enable or disable the tooltip animation.
+* [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Border) - To set the color and width for the border of the tooltip.
+* [`TextStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_TextStyle) - To customize the style of the text in tooltip.
+* [`ShowAtMousePosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_ShowAtMousePosition) - To show the tooltip at the mouse position.
+
+{% aspTab template="lineargauge/user-interactions/tooltip-appearance", sourceFiles="" %}
+
+{% endaspTab %}
+
+![Linear Gauge with tooltip customization](../images/tooltip-custom.png)
+
+## Positioning the tooltip
+
+The tooltip is positioned at the "[**End**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.TooltipPosition.html#Syncfusion_EJ2_LinearGauge_TooltipPosition_End)" of the pointer. To change the position of the tooltip at the start, or center of the pointer, set the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTooltipSettings_Position) property to "[**Start**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.TooltipPosition.html#Syncfusion_EJ2_LinearGauge_TooltipPosition_Start)" or "[**Center**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.TooltipPosition.html#Syncfusion_EJ2_LinearGauge_TooltipPosition_Center)".
+
+{% aspTab template="lineargauge/user-interactions/tooltip-position", sourceFiles="" %}
+
+{% endaspTab %}
+
+![Linear Gauge with tooltip position](../images/tooltip-position.png)
 
 ## Pointer Drag
 
-You can drag and drop either marker or bar pointer over the desired axis value using [`enableDrag`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_EnableDrag) property in the [`pointer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html).
+To drag either marker or bar pointer to the desired axis value, set the [`EnableDrag`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html#Syncfusion_EJ2_LinearGauge_LinearGaugePointer_EnableDrag) property as "**true**" in [`e-lineargauge-pointer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugePointer.html).
 
-{% aspTab template="lineargauge/user-interactions/pointer-drag", sourceFiles="pointer-drag.cs" %}
+{% aspTab template="lineargauge/user-interactions/pointer-drag", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with pointer drag](../images/dragging-pointr.gif)

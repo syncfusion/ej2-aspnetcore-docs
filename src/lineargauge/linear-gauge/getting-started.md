@@ -1,57 +1,88 @@
-# Getting Started with ASP.NET Core
+---
+title: " Getting Started with ASP.NET Core Linear Gauge component | Syncfusion "
+
+component: "Linear Gauge"
+
+description: "Learn here about getting started with Syncfusion ASP.NET Core Linear Gauge component, its elements, and more."
+---
+
+# Getting Started with ASP.NET Core Linear Gauge
 
 ## Prerequisites
 
-To get start with ASP.NET Core application, need to ensure the following software to be installed on the machine.
-* Visual Studio 2017
-* DotNet Core 2.0
+To get started with the ASP.NET Core application, ensure the following software are installed on the machine.
 
-## Setup ASP.NET Core application with Essential JS 2 for ASP.NET Core
+* Visual Studio 2019
+* DotNet Core 5.0
 
-The following steps to create ASP.NET Core Application.
+## Getting started with ASP.NET Core 5.0
 
-**Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
+### Create ASP.NET Core application
 
-![Alt text](./images/default-template.png)
+The following steps are used to create the ASP.NET Core Application.
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+**Step 1:** Open the Visual Studio and click the **File** menu and select **New -> Project** option.
 
-Open the `nuGet` package manager.
+![Getting started with the visual studio](../images/default-template.png)
 
-![Alt text](./images/solution-Explorer.png)
+**Step 2:** Select **ASP.NET Core Web Application** templates in visual studio 2019 and click **Next**.
 
-Install the **Syncfusion.EJ2** package to the application
+![Select the Asp.Net core application](../images/project-selection.png)
 
-![Alt text](./images/nuget-demo.png)
+**Step 3:** Change the application name and location of the application if necessary then click **Create**.
 
-After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
+![Changing the application name](../images/application-name.png)
 
-> We need to install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
+**Step 4:** Choose the .NET Core version as **ASP.NET Core 5.0** and select **ASP.NET Core Web App (Model-View-Controller)**, and then click **Create**. The web application project is now created with default ASP.NET Core template.
 
-**Step 3:** Open the **_ViewImports.cshtml** to import Syncfusion.EJ2 package.
+![Selecting the .net version](../images/application-name.png)
+
+**Step 5**: Add the [`Syncfusion.EJ2.AspNet.Core`](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package to the created application by using the Nuget Package Manager. Right-click the **dependencies** in the project and select the **Manage Nuget Packages** option.
+
+![Adding the nuget to the application](../images/solution-Explorer.png)
+
+**Step 6:** Install the **Syncfusion.EJ2.AspNet.Core** package to the application.
+
+![Installing the nuget](../images/nuget-install.png)
+
+The EJ2 package will be added to the application after the installation is completed.
+
+**Step 7:** Open the **~Views/ViewImports.cshtml** to import Syncfusion.EJ2 TagHelper.
 
 ```cs
 @addTagHelper *, Syncfusion.EJ2
 ```
 
-**Step 4:** Add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
+**Step 8:** Add the client side resources through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of the layout page **~/Views/Shared/_Layout.cshtml**.
 
 ```cs
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+<head>
+    ....
+    ....
+
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+</head>
 ```
 
-**Step 5:** Adding Script Manager in layout page **_Layout.cshtml.**
+**Step 9:** Add the JS2 Script Manager at the end of the `<body>` element in the layout page **~/Views/Shared/_Layout.cshtml**.
 
 ```cs
 <ejs-scripts></ejs-scripts>
 ```
 
-**Step 6:** Add the below code to your Index.cshtml view page which is present under Views/Home folder, to initialize the lineargauge.
+**Step 10:** Add the below code to your **Index.cshtml** view page which is present under **Views/Home** folder, to initialize the Linear Gauge.
 
-## Render Default LinearGauge
+```cs
+@using Syncfusion.EJ2.LinearGauge;
+```
 
-This section explains how to render default lineargauge.
+## Render LinearGauge
+
+This section explains how to render default Linear Gauge.
 
 ```cs
 
@@ -62,20 +93,18 @@ public IActionResult Default()
 
 ```
 
-Add the `ejs-lineargauge` tag like below code snippet to create the default lineargauge.
+Add the `ejs-lineargauge` tag like below code snippet to create the Linear Gauge component.
 
 ```cs
-
 @using Syncfusion.EJ2;
 
 <ejs-lineargauge id="linear">
 </ejs-lineargauge>
-
 ```
 
 ## Add Gauge Title
 
-You can add a title using `title` attribute to the linear gauge to provide quick information to the user.
+The title for the Linear Gauge can be rendered using the `title` property in the `ejs-lineargauge` tag.
 
 ```cs
 @using Syncfusion.EJ2;
@@ -86,8 +115,9 @@ You can add a title using `title` attribute to the linear gauge to provide quick
 
 ## Axis
 
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag.
-Refer below code snippet to add the axis range to lineargauge.
+The start value and end value of the Linear Gauge axis can be added using the `minimum` and `maximum` property in the `e-axis` tag.
+
+Refer below code snippet to add the axis range to Linear Gauge.
 
 ```cs
 <ejs-lineargauge id="linear" orientation="Horizontal">

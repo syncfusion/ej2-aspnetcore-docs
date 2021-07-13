@@ -1,57 +1,123 @@
-# Axes
+---
+title: " Axis in ASP.NET Core Linear Gauge component | Syncfusion "
 
-Axes is a collection of linear axis which can be used to indicate the numeric values. Line, ticks, labels, ranges and pointers are the sub elements of an axis.
+component: "Linear Gauge"
+
+description: "Learn here all about Axis feature of Syncfusion ASP.NET Core Linear Gauge component and more."
+---
+
+# Axis in ASP.NET Core Linear Gauge
+
+Axis is used to indicate the numeric values in the linear scale. The Linear Gauge component can have any number of axes. The sub-elements of an axis are line, ticks, labels, ranges, and pointers.
+
+## Setting the start value and end value of the axis
+
+The start value and end value for the Linear Gauge can be set using the [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_Maximum) in the [`e-lineargauge-axis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html) respectively. By default, the start value of the axis is "**0**" and the end value of the axis is "**100**".
+
+{% aspTab template="lineargauge/axes/minimum-maximum", sourceFiles="" %}
+
+{% endaspTab %}
+
+![Linear Gauge with minimum maximum values](../images/min-max.png)
 
 ## Line Customization
 
-The [`line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html) property of an axis provides options to customize the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLine_Height), [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLine_Width), [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLine_Color) and [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLine_Offset) of the axis line.
+The following properties in the [`e-axis-line`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html) can be used to customize the axis line in the Linear Gauge.
 
-{% aspTab template="lineargauge/axes/line-customization", sourceFiles="line-customization.cs" %}
+* [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLine_Height) - To set the length of the axis line.
+* [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLine_Width) -  To set the thickness of the axis line.
+* [`Color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLine_Color) - To set the color of the axis line.
+* [`Offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLine.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLine_Offset) - To render the axis line with the specified distance from the Linear Gauge.
+
+{% aspTab template="lineargauge/axes/line-customization", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with line customization](../images/line-custom.png)
 
 ## Ticks Customization
 
-You can customize the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Height), [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Color) and [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Width) of major and minor ticks, by using [`majorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html) and [`minorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html)) property. By default, interval for major ticks will be calculated automatically and also you can customize the interval for major and minor ticks using interval property.
+Ticks are used to specify the interval in the axis. Ticks are of two types, major ticks and minor ticks. The following properties in the [`e-axis-majorticks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_MajorTicks) and [`e-axis-minorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_MinorTicks) can be used to customize the major ticks and minor ticks respectively.
+
+* [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Height) - To set the length of the major and minor ticks in pixel values.
+* [`Color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Color) - To set the color of the major and minor ticks of the Linear Gauge.
+* [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Width) -  To set the thickness of the major and minor ticks in pixel values.
+* [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Interval) - To set the interval for the major ticks and minor ticks in the Linear Gauge.
 
 <!-- markdownlint-disable MD036 -->
 
-{% aspTab template="lineargauge/axes/ticks-customization", sourceFiles="ticks-customization.cs" %}
+{% aspTab template="lineargauge/axes/ticks-customization", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with ticks customization](../images/ticks-custom.png)
+
+### Positioning the ticks
+
+The minor and major ticks can be positioned by using the [`Offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Offset) and [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Position) properties. The [`Offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Offset) is used to render the ticks with the specified distance from the axis. By default, the offset value is "**0**". The possible values of the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeTick.html#Syncfusion_EJ2_LinearGauge_LinearGaugeTick_Position) property are "[**Inside**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Position.html#Syncfusion_EJ2_LinearGauge_Position_Inside)", "[**Outside**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Position.html#Syncfusion_EJ2_LinearGauge_Position_Outside)", "[**Cross**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Position.html#Syncfusion_EJ2_LinearGauge_Position_Cross)", and "[**Auto**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Position.html#Syncfusion_EJ2_LinearGauge_Position_Auto)". By default, the ticks will be placed inside the axis.
+
+{% aspTab template="lineargauge/axes/tick-position", sourceFiles="" %}
+
+{% endaspTab %}
+
+![Linear Gauge with ticks position](../images/ticks-position.png)
 
 ## Labels Customization
 
-The [`labelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html) property of an axis provides options to
-customize the [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Offset), [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Format), [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html) and [`font`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Font) of the axis labels.
+The style of the labels can be customized using the following properties in [`LinearGaugeFont`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html) property in the [`LinearGaugeLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html).
+
+* [`Color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_Color) - To set the color of the axis label.
+* [`FontFamily`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_FontFamily) - To set the font family of the axis label.
+* [`FontStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_FontStyle) - To set the font style of the axis label.
+* [`FontWeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_FontWeight) - To set the font weight of the axis label.
+* [`Opacity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_Opacity) - To set the opacity of the axis label.
+* [`Size`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeFont.html#Syncfusion_EJ2_LinearGauge_LinearGaugeFont_Size) - To set the size of the axis label.
 
 <!-- markdownlint-disable MD036 -->
 
-{% aspTab template="lineargauge/axes/labels-customization", sourceFiles="labels-customization.cs" %}
+{% aspTab template="lineargauge/axes/labels-customization", sourceFiles="" %}
 
 {% endaspTab %}
 
-**Customize the display of the last label**
+![Linear Gauge with label customization](../images/label-custom.png)
 
-If the last label is not in the visible range, it will be hidden by default. If you want to show the last label, set the [`ShowLastLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_ShowLastLabel) property to **true** in the axes property of linear gauge.
+### Positioning the axis label
+
+Labels can be positioned by using [`Offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Offset) and [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Position) properties in the [`LinearGaugeLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html). The [`Offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Offset) defines the distance between the labels and ticks. By default, the offset value is "**0**". The possible values of the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Position) property are "[**Inside**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Position.html#Syncfusion_EJ2_LinearGauge_Position_Inside)", "[**Outside**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Position.html#Syncfusion_EJ2_LinearGauge_Position_Outside)", "[**Cross**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Position.html#Syncfusion_EJ2_LinearGauge_Position_Cross)", and "[**Auto**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Position.html#Syncfusion_EJ2_LinearGauge_Position_Auto)". By default, the labels will be placed inside the axis.
+
+{% aspTab template="lineargauge/axes/label-position", sourceFiles="" %}
+
+{% endaspTab %}
+
+![Linear Gauge with label position](../images/label-position.png)
+
+### Customizing the display of the last label
+
+If the last label is not in the visible range, it will be hidden by default. The last label can be made visible by setting the [`ShowLastLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_ShowLastLabel) property as "**true**" in the [`e-lineargauge-axis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html).
 
 <!-- markdownlint-disable MD036 -->
 
-{% aspTab template="lineargauge/axes/showlastlabel", sourceFiles="showlastlabel.cs" %}
+{% aspTab template="lineargauge/axes/showlastlabel", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with last label](../images/showlast-label.png)
 
 <!-- markdownlint-disable MD036 -->
 
-**Label Format**
+### Label Format
 
-Axis labels can be formatted by using the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Format) property in [`labelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html) and it supports all the globalize formats.
+Axis labels in the Linear Gauge control can be formatted using the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html#Syncfusion_EJ2_LinearGauge_LinearGaugeLabel_Format) property in [`LinearGaugeLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeLabel.html).  It is used to render the axis labels in a certain format or to add a user-defined unit in the label. It works with the help of placeholder like "**{value}°C**", where "**value**" represents the axis value. For example, 20°C.
 
-{% aspTab template="lineargauge/axes/label-format", sourceFiles="label-format.cs" %}
+{% aspTab template="lineargauge/axes/label-format", sourceFiles="" %}
 
 {% endaspTab %}
 
-The following table describes the result of applying some commonly used label formats on numeric values.
+![Linear Gauge with label format](../images/label-format.png)
+
+### Displaying numeric format in labels
+
+The numeric formats such as currency, percentage, and so on can be displayed in the labels of the Linear Gauge using the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Format) property in the Linear Gauge. The following table describes the result of applying some commonly used label formats on numeric values.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -65,91 +131,94 @@ The following table describes the result of applying some commonly used label fo
 <td>1000</td>
 <td>n1</td>
 <td>1000.0</td>
-<td>The Number is rounded to 1 decimal place</td>
+<td>The number is rounded to 1 decimal place.</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>n2</td>
 <td>1000.00</td>
-<td>The Number is rounded to 2 decimal place</td>
+<td>The number is rounded to 2 decimal place.</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>n3</td>
 <td>1000.000</td>
-<td>The Number is rounded to 3 decimal place</td>
+<td>The number is rounded to 3 decimal place.</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p1</td>
 <td>1.0%</td>
-<td>The Number is converted to percentage with 1 decimal place</td>
+<td>The number is converted to percentage with 1 decimal place.</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p2</td>
 <td>1.00%</td>
-<td>The Number is converted to percentage with 2 decimal place</td>
+<td>The number is converted to percentage with 2 decimal place.</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p3</td>
 <td>1.000%</td>
-<td>The Number is converted to percentage with 3 decimal place</td>
+<td>The number is converted to percentage with 3 decimal place</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>c1</td>
 <td>$1,000.0</td>
-<td>The Currency symbol is appended to number and number is rounded to 1 decimal place</td>
+<td>The currency symbol is appended to number and number is rounded to 1 decimal place.</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>c2</td>
 <td>$1,000.00</td>
-<td>The Currency symbol is appended to number and number is rounded to 2 decimal place</td>
+<td>The currency symbol is appended to number and number is rounded to 2 decimal place.</td>
 </tr>
 </table>
 
-<!-- markdownlint-disable MD036 -->
-
-**Custom Label Format**
-
-Axis also supports custom label format using placeholder like {value}°C, in which the value represents the axis label e.g. 20°C.
-
-{% aspTab template="lineargauge/axes/custom-label", sourceFiles="custom-label.cs" %}
+{% aspTab template="lineargauge/axes/custom-label", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with custom label format](../images/custom-label.png)
 
 ## Orientation
 
-By default, the Linear Gauge is rendered vertically. To change its orientation, the [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.Orientation.html) property must be set to **"Horizontal"**
+By default, the Linear Gauge is rendered vertically. To change its orientation, the [`Orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Orientation) property must be set to "**Horizontal**".
 
-{% aspTab template="lineargauge/axes/orientation", sourceFiles="orientation.cs" %}
-
-{% endaspTab %}
-
-## Inverted Axes
-
-[`isInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_IsInversed) property is used to choose the rendering of axis either bottom to top or top to bottom direction.
-
-{% aspTab template="lineargauge/axes/inverted-axes", sourceFiles="inverted-axes.cs" %}
+{% aspTab template="lineargauge/axes/orientation", sourceFiles="" %}
 
 {% endaspTab %}
 
-## Opposed Axes
+![Linear Gauge with horizontal orientation](../images/orientation.png)
 
-To place an axis opposite from its original position, set [`opposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_OpposedPosition) property as true in the axis.
+## Inverted Axis
 
-{% aspTab template="lineargauge/axes/opposed-axes", sourceFiles="opposed-axes.cs" %}
+The axis of the Linear Gauge component can be inversed by setting the [`IsInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_IsInversed) property to "**true**" in the [`e-lineargauge-axis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html).
+
+{% aspTab template="lineargauge/axes/inverted-axes", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with inversed axis](../images/isInversed.png)
+
+## Opposed Axis
+
+To place an axis opposite from its original position, [`OpposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_OpposedPosition) property in the [`e-lineargauge-axis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html) must be set as "**true**".
+
+{% aspTab template="lineargauge/axes/opposed-axes", sourceFiles="" %}
+
+{% endaspTab %}
+
+![Linear Gauge with opposed axis](../images/opposedPosition.png)
 
 ## Multiple Axes
 
-You can render any number of axis for a linear gauge by using array of axis objects.
-Each axis will have its own ranges, pointers, annotations and customization options.
+Multiple axes can be added to the Linear Gauge by adding multiple [`e-lineargauge-axis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html) in the [`e-lineargauge-axes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxes.html) and customization can be done with the [`e-lineargauge-axis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html). Each axis can be customized separately as shown in the following example.
 
-{% aspTab template="lineargauge/axes/multiple-axes", sourceFiles="multiple-axes.cs" %}
+{% aspTab template="lineargauge/axes/multiple-axes", sourceFiles="" %}
 
 {% endaspTab %}
+
+![Linear Gauge with multiple axis](../images/multiple-axis.png)

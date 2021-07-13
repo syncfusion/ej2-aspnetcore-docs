@@ -1,25 +1,37 @@
-# Linear Gauge Dimensions
+---
+title: " Dimensions in ASP.NET Core Linear Gauge component | Syncfusion "
+
+component: "Linear Gauge"
+
+description: "Learn here all about the Dimensions of Syncfusion ASP.NET Core Linear Gauge component and more."
+---
+
+# Dimensions in ASP.NET Core Linear Gauge
 
 <!-- markdownlint-disable MD036 -->
 
 ## Size for Linear Gauge
 
-You can also set size for linear gauge directly through [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Height) properties.
+The height and width of the Linear Gauge can be set using the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Height) and [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Width) properties in [`ejs-lineargauge`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html).
 
-**In Pixel**
+### In Pixel
 
-You can set the size of lineargauge in pixel as demonstrated below.
+The size of the Linear Gauge can be set in pixel as demonstrated below.
 
-{% aspTab template="lineargauge/dimensions/pixel", sourceFiles="pixel.cs" %}
-
-{% endaspTab %}
-
-**In Percentage**
-
-By setting value in percentage, linear gauge gets its dimension with respect to its container. For example, when the height is ‘50%’, linear gauge renders to half of the container height.
-
-{% aspTab template="lineargauge/dimensions/percentage", sourceFiles="percentage.cs" %}
+{% aspTab template="lineargauge/dimensions/pixel", sourceFiles="" %}
 
 {% endaspTab %}
 
->Note: When you do not specify the size, it takes `450px` as the height and window size as its width.
+![Linear Gauge with height and width in pixel value](../images/gauge-pixel.png)
+
+### In Percentage
+
+By setting value in percentage, Linear Gauge receives its dimension matching to its parent. For example, when the height is set as "**50%**", Linear Gauge renders to half of the parent height. The Linear Gauge will be responsive when the width is set as "**100%**".
+
+{% aspTab template="lineargauge/dimensions/percentage", sourceFiles="" %}
+
+{% endaspTab %}
+
+![Linear Gauge with height and width in percentage value](../images/gauge-percentage.png)
+
+>Note: When the component's size is not specified, the height will be "**450px**" and the width will be the same as the parent element's width.
