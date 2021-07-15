@@ -11,3 +11,5 @@ You can sort the selected files in uploader control by using the [selected](http
 {% aspTab template="uploader/sorting", sourceFiles="sorting.cs, index.css" %}
 
 {% endaspTab %}
+
+> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.

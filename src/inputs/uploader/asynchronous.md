@@ -246,6 +246,8 @@ The following code block shows how to add the additional headers with save and r
 
 ```
 
+> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+
 ## See Also
 
 * [How to add additional data on upload](./how-to/add-additional-data-on-upload)
