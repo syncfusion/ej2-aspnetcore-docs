@@ -3,6 +3,8 @@
 * [Import](document-editor/import.md)
 * [Export](document-editor/export.md)
 * [Images](document-editor/image.md)
+* [Shapes](document-editor/shapes.md)
+* [Text Wrapping Style](document-editor/text-wrapping-style.md)
 * [Bookmarks](document-editor/bookmark.md)
 * [Hyperlink](document-editor/link.md)
 * [Tables](document-editor/table.md)
