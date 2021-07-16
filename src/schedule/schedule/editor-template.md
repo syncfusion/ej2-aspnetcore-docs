@@ -224,3 +224,5 @@ The following code example shows you how to customize the `moreEventsClick` prop
 {% aspTab template="schedule/editor-template/more-event-edit", sourceFiles="data.cs"  %}
 
 {% endaspTab %}
+
+> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

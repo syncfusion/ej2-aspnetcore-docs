@@ -107,6 +107,8 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 
 {% endaspTab %}
 
+> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+
 ## See Also
 
 * [How to change first day of the week in the Scheduler](./working-days/#setting-start-day-of-the-week)

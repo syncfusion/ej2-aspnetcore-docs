@@ -6,7 +6,7 @@ description: "This article demonstrates how to create a simple Scheduler and con
 
 # Getting Started
 
-This section briefly explains about how to include a simple Scheduler in your ASP.NET Core application. You can refer the [ASP.NET Core Getting Started documentation](../getting-started) page for introduction part of the system requirements and common component configurations.
+This section briefly explains about how to include a simple [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) in your ASP.NET Core application. You can refer the [ASP.NET Core Getting Started documentation](../getting-started) page for introduction part of the system requirements and common component configurations.
 
 ## Initialize the Scheduler component
 
@@ -143,3 +143,5 @@ This can be achieved by defining views property to accept the array of object ty
 {% aspTab template="schedule/views/individual-views", sourceFiles="data.cs"  %}
 
 {% endaspTab %}
+
+> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
